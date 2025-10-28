@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #064420;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    background: #0b6623;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header,
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #05361d;
+    font-weight: bold;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.page h2 {
+    margin-top: 0;
+}
