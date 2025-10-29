@@ -1,29 +1,21 @@
 import React from "react";
 import Card from "../Card/Card.jsx";
 import styles from './PlayerHand.module.css';
+import {calculatePoints} from "../../utils/GameUtil.js";
 
 function PlayerHand({name, cards=[]}){
-    const points = cards.reduce((total, card) => {
-        let value = 0;
-        if (['J', 'Q', 'K'].includes(card.value)) {
-            value = 10;
-        } else if (card.value === 'A') {
-            value = 11;
-        } else {
-            value = parseInt(card.value);
-        }
-        return total + value;
-    }, 0);
-
     return (
         <div className={styles['player-hand']}>
-            <h2>{name}'s Hand</h2>
-            <div className={styles['player-hand-cards']}>
+            <div className={styles['player-hand-cards']} >
                 {cards.map((card, index) => (
-                    <Card {...card} hidden={false} key={index}/>
+                    <Card style={{rotate: index * 10 - (cards.length -1) * 2.5 + 'deg', left: index * 20 + 'px'}}
+                          {...card} hidden={false} key={`${card.suit}${card.value}`}/>
                 ))}
             </div>
-            <p>Points: {points}</p>
+            <div className={styles['player-hand-info']}>
+                <h2>{name}'s Hand</h2>
+                <span className={styles['points-label']}>{calculatePoints(cards)}</span>
+            </div>
         </div>
     );
 }

@@ -26,6 +26,11 @@ body {
     font-weight: bold;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .main {
     padding: 20px;
     text-align: center;
@@ -33,4 +38,11 @@ body {
 
 .page h2 {
     margin-top: 0;
+}
+
+.home-link{
+    img{
+        height: 1.5em;
+        vertical-align: center;
+    }
 }

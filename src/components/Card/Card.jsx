@@ -9,9 +9,9 @@ function getCardImage(value, suit, hidden = false) {
 
 }
 
-function Card({value, suit, hidden = true}) {
+function Card({value, suit, style = {}, hidden = true}) {
     return (
-        <div className={styles['card']}>
+        <div className={styles['card']} style={style}>
             <img src={getCardImage(value, suit, hidden)} alt={`${value} of ${suit}`} className={styles['cardImage']} />
         </div>
     );
