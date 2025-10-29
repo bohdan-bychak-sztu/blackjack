@@ -39,9 +39,33 @@ function GamePage() {
 
     const onHit = () => {
         const card = getCardFromDeck();
+        console.log(card);
         setPlayerCards((prevCards) => [...prevCards, card]);
         if (calculatePoints([...playerCards, card]) > 21) {
             alert("Bust! You exceeded 21.");
+        }
+    }
+
+    const onStand = () => {
+        let currentDealerCards = [...dealerCards];
+        let dealerPoints = calculatePoints(currentDealerCards);
+
+        while (dealerPoints < 17) {
+            const card = getCardFromDeck();
+            currentDealerCards.push(card);
+            dealerPoints = calculatePoints(currentDealerCards);
+        }
+
+        setDealerCards(currentDealerCards);
+
+        const playerPoints = calculatePoints(playerCards);
+
+        if (dealerPoints > 21 || playerPoints > dealerPoints) {
+            alert("You win!");
+        } else if (playerPoints < dealerPoints) {
+            alert("Dealer wins!");
+        } else {
+            alert("It's a tie!");
         }
     }
 
@@ -60,7 +84,7 @@ function GamePage() {
         <div>
             <DealerHand cards={dealerCards}/>
             <PlayerHand name="Player" cards={playerCards}/>
-            <GameControls onHit={onHit}/>
+            <GameControls onHit={onHit} onStand={onStand}/>
         </div>
     );
 }
