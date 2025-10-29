@@ -14,7 +14,7 @@ function DealerHand({cards=[], reveal= false}){
             </div>
             <div className={styles['dealer-hand-info']}>
                 <h2>Dealer's Hand</h2>
-                <span className={styles['points-label']}>{calculatePoints(cards)}</span>
+                <span className={styles['points-label']}>{calculatePoints(cards.slice(1))}</span>
             </div>
         </div>
     );

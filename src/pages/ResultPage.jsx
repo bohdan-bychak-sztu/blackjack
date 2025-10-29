@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function ResultPage({ onRestart }) {
+export default function ResultPage({ onRestart, result }) {
     return (
         <div>
             <h2>Game Over!</h2>
-            <p>You won / lost / draw (placeholder)</p>
+            <p>{result}</p>
             <button onClick={onRestart}>Play Again</button>
         </div>
     );

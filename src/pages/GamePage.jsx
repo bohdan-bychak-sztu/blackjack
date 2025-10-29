@@ -1,9 +1,11 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import DealerHand from "../components/DealerHand/DealerHand.jsx";
 import PlayerHand from "../components/PlayerHand/PlayerHand.jsx";
 import GameControls from "../components/GameControls/GameControls.jsx";
 import allCards from "../data/cards.js";
 import {calculatePoints, shuffle} from "../utils/GameUtil.js";
+import Modal from "../components/Modal/Modal.jsx";
+import ResultPage from "./ResultPage.jsx";
 
 
 function GamePage() {
@@ -11,6 +13,9 @@ function GamePage() {
     const [playerCards, setPlayerCards] = React.useState([]);
     const [dealerCards, setDealerCards] = React.useState([]);
     const [isShuffled, setIsShuffled] = React.useState(false);
+    const [reveal, setReveal] = React.useState(false);
+
+    const [result, setResult] = useState(null);
 
     const shuffleDeck = () => {
         const shuffled = shuffle([...deck]);
@@ -31,41 +36,58 @@ function GamePage() {
         setDealerCards([dealerCard1, dealerCard2]);
     };
 
-    const getCardFromDeck = () => {
-        const card = deck[0];
-        setDeck((prevDeck) => prevDeck.slice(1));
-        return card;
+    const getCardFromDeck = (currentDeck) => {
+        const card = currentDeck[0];
+        const newDeck = currentDeck.slice(1);
+        return { card, newDeck };
+    };
+
+    const onReload = () => {
+        const reshuffled = shuffle([...allCards]);
+        setDeck(reshuffled);
+        setPlayerCards([]);
+        setDealerCards([]);
+        setResult(null);
+        setReveal(false);
+        setIsShuffled(true);
     };
 
     const onHit = () => {
-        const card = getCardFromDeck();
-        console.log(card);
-        setPlayerCards((prevCards) => [...prevCards, card]);
-        if (calculatePoints([...playerCards, card]) > 21) {
-            alert("Bust! You exceeded 21.");
+        const { card, newDeck } = getCardFromDeck(deck);
+        setDeck(newDeck);
+
+        const newPlayerCards = [...playerCards, card];
+        setPlayerCards(newPlayerCards);
+
+        if (calculatePoints(newPlayerCards) > 21) {
+            setReveal(true);
+            setResult("Bust! Dealer wins.");
         }
-    }
+    };
 
     const onStand = () => {
+        let currentDeck = [...deck];
         let currentDealerCards = [...dealerCards];
         let dealerPoints = calculatePoints(currentDealerCards);
+        setReveal(true);
 
         while (dealerPoints < 17) {
-            const card = getCardFromDeck();
+            const card = currentDeck.shift();
             currentDealerCards.push(card);
             dealerPoints = calculatePoints(currentDealerCards);
         }
 
         setDealerCards(currentDealerCards);
+        setDeck(currentDeck);
 
         const playerPoints = calculatePoints(playerCards);
 
         if (dealerPoints > 21 || playerPoints > dealerPoints) {
-            alert("You win!");
+            setResult("You win!");
         } else if (playerPoints < dealerPoints) {
-            alert("Dealer wins!");
-        } else {
-            alert("It's a tie!");
+            setResult("Dealer wins!");
+        } else{
+            setResult("It's a tie!");
         }
     }
 
@@ -82,9 +104,12 @@ function GamePage() {
 
     return (
         <div>
-            <DealerHand cards={dealerCards}/>
+            <DealerHand cards={dealerCards} reveal={reveal}/>
             <PlayerHand name="Player" cards={playerCards}/>
             <GameControls onHit={onHit} onStand={onStand}/>
+            <Modal isOpen={result} title="Result" onClose={() => {setResult(false); onReload();}}>
+                <ResultPage result={result} onRestart={onReload}/>
+            </Modal>
         </div>
     );
 }
