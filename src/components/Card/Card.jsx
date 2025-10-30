@@ -3,9 +3,9 @@ import styles from "./Card.module.css"
 
 function getCardImage(value, suit, hidden = false) {
     if (hidden) {
-        return "/cards/red_back.png";
+        return `${import.meta.env.BASE_URL}cards/red_back.png`;
     }
-    return `/cards/${value}${suit}.png`;
+    return `${import.meta.env.BASE_URL}cards/${value}${suit}.png`;
 
 }
 

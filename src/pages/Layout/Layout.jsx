@@ -9,9 +9,9 @@ export default function Layout() {
     return (
         <div className={styles["app-container"]}>
             <header className={styles["header"]}>
-                <NavLink to={"/start"} className={styles["home-link"]}><img src="/icons/home_icon.png" alt="home" loading="lazy" /></NavLink>
+                <NavLink to={"/start"} className={styles["home-link"]}><img src={`${import.meta.env.BASE_URL}icons/home_icon.png`} alt="home" loading="lazy" /></NavLink>
                 🃏 Blackjack
-                <span className={styles.button} onClick={() => setIsOpen(true)}><img src="/icons/info_icon.png" alt="info" loading="lazy" /></span>
+                <span className={styles.button} onClick={() => setIsOpen(true)}><img src={`${import.meta.env.BASE_URL}icons/info_icon.png`} alt="info" loading="lazy" /></span>
                 <Modal isOpen={isOpen} title="How to play Blackjack" onClose={() => setIsOpen(false)}>
                     <p>The goal of Blackjack is to beat the dealer by having a hand total closer to 21 without exceeding it.
                         Cards 2 through 10 are worth their face value, Jacks, Queens, and Kings are all worth 10, and an Ace can
