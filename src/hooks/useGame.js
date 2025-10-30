@@ -1,10 +1,9 @@
 import {useState} from "react";
-import playerHand from "../components/PlayerHand/PlayerHand.jsx";
 import {shuffle} from "../utils/GameUtil.js";
 import allCards from "../data/cards.js";
 
 export default function useGame(initialState) {
-    const [deck, setDeck] = useState([...initialState]);
+    const [deck, setDeck] = useState(shuffle([...initialState]));
     const [result, setResult] = useState(null);
     const [reveal, setReveal] = useState(false);
 
@@ -26,6 +25,7 @@ export default function useGame(initialState) {
         dealerHand.clearHand();
         setResult(null);
         setReveal(false);
+        dealInitialCards(playerHand, dealerHand);
     }
 
     return {deck, setDeck, result, setResult, reveal, setReveal, dealInitialCards, onReload};

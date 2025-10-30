@@ -4,9 +4,10 @@ export default function usePlayerActions(deck, setDeck, playerHand, dealerHand, 
     const onHit = () => {
         const card = deck[0];
         setDeck(deck.slice(1));
-        playerHand.addCard(card);
+        const currentPlayerCards = [...playerHand.hand, card];
+        playerHand.setHand(currentPlayerCards);
 
-        if (calculatePoints(playerHand.hand) > 21) {
+        if (calculatePoints(currentPlayerCards) > 21) {
             setReveal(true);
             setResult("Bust! Dealer wins.");
         }

@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import DealerHand from "../components/DealerHand/DealerHand.jsx";
 import PlayerHand from "../components/PlayerHand/PlayerHand.jsx";
 import GameControls from "../components/GameControls/GameControls.jsx";
 import allCards from "../data/cards.js";
@@ -23,7 +22,7 @@ function GamePage() {
 
     return (
         <div>
-            <DealerHand cards={dealerHand.hand} reveal={reveal}/>
+            <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true}/>
             <PlayerHand name="Player" cards={playerHand.hand}/>
             <GameControls onHit={onHit} onStand={onStand}/>
             <Modal isOpen={result} title="Result" onClose={() => {setResult(null); onReload(playerHand, dealerHand);}}>

@@ -29,6 +29,8 @@
     border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: space-between;
+    cursor: grab;
+    user-select: none;
 
     h2{
         margin: 0;
