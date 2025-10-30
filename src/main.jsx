@@ -12,10 +12,11 @@ createRoot(document.getElementById('root')).render(
         <HashRouter>
             <Routes>
                 <Route element={<Layout/>}>
-                    <Route index path="/" element={<StartPage/>}/>
+                    <Route index element={<StartPage/>}/>
                     <Route path="/start" element={<StartPage/>}/>
                     <Route path="/game" element={<GamePage/>}/>
                     <Route path="/result" element={<ResultPage/>}/>
+                    <Route path="*" element={<h1>404 Not Found</h1>} />
                 </Route>
             </Routes>
         </HashRouter>
