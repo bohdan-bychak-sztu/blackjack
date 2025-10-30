@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://bohdan-bychak-sztu.github.io/blackjack",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
