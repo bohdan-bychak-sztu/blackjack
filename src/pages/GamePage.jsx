@@ -6,22 +6,18 @@ import allCards from "../data/cards.js";
 import {calculatePoints, shuffle} from "../utils/GameUtil.js";
 import Modal from "../components/Modal/Modal.jsx";
 import ResultPage from "./ResultPage.jsx";
+import useDeck from "../hooks/useDeck.js";
+import useHand from "../hooks/useHand.js";
 
 
 function GamePage() {
-    const [deck, setDeck] = React.useState([...allCards]);
-    const [playerCards, setPlayerCards] = React.useState([]);
-    const [dealerCards, setDealerCards] = React.useState([]);
-    const [isShuffled, setIsShuffled] = React.useState(false);
+    const {deck, shuffleDeck, getCardFromDeck, setDeck} = useDeck(shuffle([...allCards]));
+    const playerHand = useHand();
+    const dealerHand = useHand();
     const [reveal, setReveal] = React.useState(false);
 
     const [result, setResult] = useState(null);
 
-    const shuffleDeck = () => {
-        const shuffled = shuffle([...deck]);
-        setDeck(shuffled);
-        setIsShuffled(true);
-    };
 
     const dealInitialCards = () => {
         let currentDeck = [...deck];
@@ -32,31 +28,26 @@ function GamePage() {
         const dealerCard2 = currentDeck.shift();
 
         setDeck(currentDeck);
-        setPlayerCards([playerCard1, playerCard2]);
-        setDealerCards([dealerCard1, dealerCard2]);
+        playerHand.setHand([playerCard1, playerCard2]);
+        dealerHand.setHand([dealerCard1, dealerCard2]);
     };
 
-    const getCardFromDeck = (currentDeck) => {
-        const card = currentDeck[0];
-        setDeck(currentDeck.slice(1));
-        return card;
-    };
 
     const onReload = () => {
         const reshuffled = shuffle([...allCards]);
         setDeck(reshuffled);
-        setPlayerCards([]);
-        setDealerCards([]);
+        playerHand.clearHand();
+        dealerHand.clearHand();
+        dealInitialCards();
         setResult(null);
         setReveal(false);
-        setIsShuffled(true);
     };
 
     const onHit = () => {
         const card = getCardFromDeck(deck);
 
-        const newPlayerCards = [...playerCards, card];
-        setPlayerCards(newPlayerCards);
+        const newPlayerCards = [...playerHand.hand, card];
+        playerHand.setHand(newPlayerCards);
 
         if (calculatePoints(newPlayerCards) > 21) {
             setReveal(true);
@@ -66,8 +57,8 @@ function GamePage() {
 
     const onStand = () => {
         let currentDeck = [...deck];
-        let currentDealerCards = [...dealerCards];
-        let dealerPoints = calculatePoints(currentDealerCards);
+        let currentDealerCards = [...dealerHand.hand];
+        let dealerPoints = dealerHand.points;
         setReveal(true);
 
         while (dealerPoints < 17) {
@@ -76,10 +67,10 @@ function GamePage() {
             dealerPoints = calculatePoints(currentDealerCards);
         }
 
-        setDealerCards(currentDealerCards);
+        dealerHand.setHand(currentDealerCards);
         setDeck(currentDeck);
 
-        const playerPoints = calculatePoints(playerCards);
+        const playerPoints = playerHand.points;
 
         if (dealerPoints > 21 || playerPoints > dealerPoints) {
             setResult("You win!");
@@ -95,16 +86,13 @@ function GamePage() {
     }, []);
 
     useEffect(() => {
-        if (isShuffled) {
-            dealInitialCards();
-            setIsShuffled(false);
-        }
-    }, [isShuffled]);
+        dealInitialCards();
+    }, []);
 
     return (
         <div>
-            <DealerHand cards={dealerCards} reveal={reveal}/>
-            <PlayerHand name="Player" cards={playerCards}/>
+            <DealerHand cards={dealerHand.hand} reveal={reveal}/>
+            <PlayerHand name="Player" cards={playerHand.hand}/>
             <GameControls onHit={onHit} onStand={onStand}/>
             <Modal isOpen={result} title="Result" onClose={() => {setResult(false); onReload();}}>
                 <ResultPage result={result} onRestart={onReload}/>
