@@ -1,0 +1,45 @@
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    background: #0b6623;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header,
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #05361d;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.page h2 {
+    margin-top: 0;
+}
+
+img{
+    height: 1.5em;
+    vertical-align: center;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
