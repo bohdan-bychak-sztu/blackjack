@@ -38,8 +38,8 @@ function GamePage() {
 
     const getCardFromDeck = (currentDeck) => {
         const card = currentDeck[0];
-        const newDeck = currentDeck.slice(1);
-        return { card, newDeck };
+        setDeck(currentDeck.slice(1));
+        return card;
     };
 
     const onReload = () => {
@@ -53,8 +53,7 @@ function GamePage() {
     };
 
     const onHit = () => {
-        const { card, newDeck } = getCardFromDeck(deck);
-        setDeck(newDeck);
+        const card = getCardFromDeck(deck);
 
         const newPlayerCards = [...playerCards, card];
         setPlayerCards(newPlayerCards);

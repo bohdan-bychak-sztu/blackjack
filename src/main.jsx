@@ -6,7 +6,6 @@ import StartPage from './pages/StartPage/StartPage.jsx';
 import Layout from './pages/Layout/Layout.jsx';
 import GamePage from './pages/GamePage.jsx';
 import ResultPage from './pages/ResultPage.jsx';
-import RulesPage from "./pages/Rules/RulesPage.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -16,7 +15,6 @@ createRoot(document.getElementById('root')).render(
                     <Route path="/start" element={<StartPage/>}/>
                     <Route path="/game" element={<GamePage/>}/>
                     <Route path="/result" element={<ResultPage/>}/>
-                    <Route path="/rules" element={<RulesPage/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
