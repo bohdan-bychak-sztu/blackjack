@@ -3,7 +3,7 @@ import {Link, NavLink, Outlet} from "react-router";
 import styles from './Layout.module.css';
 import Modal from "../../components/Modal/Modal.jsx";
 import ResultPage from "../ResultPage.jsx";
-import SettingsPage from "../SettingsPage.jsx";
+import SettingsPage from "../SettingsPage/SettingsPage.jsx";
 import UserSelectionPage from "../UserSelection/UserSelectionPage.jsx";
 
 export default function Layout() {

@@ -6,10 +6,11 @@ export default function usePlayers() {
         return savedPlayers ? JSON.parse(savedPlayers) : [];
     });
 
-    const activePlayer = () =>
+    let activePlayer =
         players.find(player => player.active);
 
     useEffect(() => {
+        console.log('Players updated in usePlayers:', players);
         localStorage.setItem('players', JSON.stringify(players));
     }, [players]);
 
@@ -17,10 +18,15 @@ export default function usePlayers() {
         setPlayers((prevPlayers) => [...prevPlayers, player]);
     }
 
-    const updatePlayer = (id, updatedPlayer) => {
+    const updatePlayer = (id, updatedSettings) => {
         setPlayers((prevPlayers) =>
             prevPlayers.map((player) =>
-                player.id === id ? {...player, ...updatedPlayer} : player
+                player.id === id
+                    ? {
+                        ...player,
+                        settings: { ...player.settings, ...updatedSettings }
+                    }
+                    : player
             )
         );
     }
@@ -37,11 +43,11 @@ export default function usePlayers() {
 
     const setActivePlayer = (id) => {
         setPlayers((prevPlayers) => {
-            const updatedPlayers = prevPlayers.map((player) =>
-                player.id === id ? { ...player, active: true } : { ...player, active: false }
+            return prevPlayers.map((player) =>
+                player.id === id ? {...player, active: true} : {...player, active: false}
             );
-            return updatedPlayers;
         });
+        activePlayer = players.find(player => player.id === id);
     };
 
     return { players, addPlayer, updatePlayer, removePlayer, clearPlayers, setActivePlayer, activePlayer };

@@ -1,44 +1,40 @@
-import React from "react";
-import {Link, useNavigate} from "react-router";
+import React, {useContext} from "react";
 import styles from './Userselectionpage.module.css';
-import usePlayers from "../../hooks/usePlayers.js";
-import useSettings from "../../hooks/useSettings.js";
+import AppContext from "../../contexts/AppContext.js";
 
 export default function UserSelectionPage() {
-    const {players, addPlayer, updatePlayer, removePlayer, clearPlayers, activePlayer, setActivePlayer} = usePlayers();
-    const {userSettings, setSettings} = useSettings(activePlayer ? activePlayer.id.toString() : "default");
-    const navigate = useNavigate();
+    const {players, settings} = useContext(AppContext);
+
 
     const onAddUser = () => {
         const newPlayer = {
             id: Date.now(),
-            name: `Player ${players.length + 1}`,
             stats: {
                 gamesPlayed: 0,
                 gamesWon: 0
             },
             settings: {
-
+                name: `Player ${players.players.length + 1}`,
             }
         }
-        addPlayer(newPlayer);
+        players.addPlayer(newPlayer);
     }
 
     const onSelectUser = (userId) => {
-        setActivePlayer(userId);
-        navigate('/game', { state: { refresh: Date.now() } });
+        players.setActivePlayer(userId);
+        settings.changeUser(userId);
     }
 
     return (
         <div>
             <h2>Обери профіль гравця</h2>
             <div className={styles['user-options']}>
-                {players.map((player) => (
-                    <div key={player.id} className={styles['user-option'] + (activePlayer && activePlayer.id === player.id ? ` ${styles['active']}` : '')}
+                {players.players.map((player) => (
+                    <div key={player.id} className={styles['user-option'] + (players.activePlayer && players.activePlayer.id === player.id ? ` ${styles['active']}` : '')}
                          onClick={() => onSelectUser(player.id)}
                     >
-                        <span>{player.name}</span>
-                        <button className={styles['delete']} onClick={() => removePlayer(player.id)}>X</button>
+                        <span>{player.settings.name}</span>
+                        <button className={styles['delete']} onClick={() => players.removePlayer(player.id)}>X</button>
                     </div>
                 ))}
             </div>

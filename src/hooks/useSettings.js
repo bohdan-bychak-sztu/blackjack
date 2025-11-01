@@ -2,44 +2,30 @@ import { useEffect, useState } from "react";
 
 export default function useSettings(user = "default") {
     const [userSettings, setUserSettings] = useState(() => {
-        const savedSettings = JSON.parse(localStorage.getItem('players')).filter(player => player.id.toString() === user)[0]?.settings;
-        return savedSettings ? savedSettings : {};
+        const savedPlayers = JSON.parse(localStorage.getItem('players')) || [];
+        const activePlayer = savedPlayers.find(player => player.id.toString() === user);
+        return activePlayer?.settings || {};
     });
 
     const updateLocalStorage = (updatedSettings) => {
         const players = JSON.parse(localStorage.getItem('players')) || [];
-        const updatedPlayers = players.map(player =>
-            player.id.toString() === user ? { ...player, settings: updatedSettings } : player
-        );
+        const updatedPlayers = players.map(player => {
+            if (player.id.toString() === user) {
+                return {
+                    ...player,
+                    settings: updatedSettings,
+                    stats: player.stats || { gamesPlayed: 0, gamesWon: 0 }
+                };
+            }
+            return player;
+        });
+
         localStorage.setItem('players', JSON.stringify(updatedPlayers));
     };
 
     useEffect(() => {
         updateLocalStorage(userSettings);
-    }, [user, userSettings]);
-
-    const addUserSetting = (key, value) => {
-        setUserSettings((prevSettings) => {
-            const updatedSettings = { ...prevSettings, [key]: value };
-            updateLocalStorage(updatedSettings);
-            return updatedSettings;
-        });
-    };
-
-    const removeUserSetting = (key) => {
-        setUserSettings((prevSettings) => {
-            const { [key]: _, ...rest } = prevSettings;
-            updateLocalStorage(rest);
-            return rest;
-        });
-    };
-
-    const clearSettings = () => {
-        setUserSettings(() => {
-            updateLocalStorage({});
-            return {};
-        });
-    };
+    }, [userSettings]);
 
     const setSettings = (newSettings) => {
         setUserSettings(() => {
@@ -49,9 +35,10 @@ export default function useSettings(user = "default") {
     };
 
     const changeUser = (newUser) => {
-        const savedSettings = JSON.parse(localStorage.getItem('players')).filter(player => player.id.toString() === newUser)[0]?.settings;
-        setUserSettings(savedSettings ? savedSettings : {});
+        const savedPlayers = JSON.parse(localStorage.getItem('players')) || [];
+        const selectedPlayer = savedPlayers.find(player => player.id === newUser);
+        setUserSettings(selectedPlayer?.settings || {});
     }
 
-    return { userSettings, addUserSetting, removeUserSetting, clearSettings, setSettings, changeUser };
+    return { userSettings, setSettings, changeUser };
 }
