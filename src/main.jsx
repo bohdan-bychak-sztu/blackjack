@@ -6,6 +6,8 @@ import './i18n';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <App />
+        <div className="scalable-content">
+            <App/>
+        </div>
     </StrictMode>
 );

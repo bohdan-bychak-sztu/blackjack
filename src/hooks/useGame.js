@@ -27,7 +27,6 @@ export default function useGame(initialState) {
         dealerHand.clearHand();
         setResult(null);
         setReveal(false);
-        //dealInitialCards(playerHand, dealerHand);
     }
 
     return {deck, setDeck, result, setResult, reveal, setReveal, dealInitialCards, onReload};

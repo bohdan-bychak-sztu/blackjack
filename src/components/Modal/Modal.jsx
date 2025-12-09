@@ -2,9 +2,11 @@ import {createPortal} from "react-dom";
 import styles from './Modal.module.css';
 import useDraggable from "../../hooks/useDraggable.js";
 import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 
 export default function Modal({isOpen, onClose, title, children}) {
     const {position, onMouseDown, resetPosition} = useDraggable(isOpen);
+    const {t} = useTranslation();
 
     useEffect(() => {
         if (!isOpen) {
@@ -24,7 +26,7 @@ export default function Modal({isOpen, onClose, title, children}) {
                  style={{transform: `translate(${position.x}px, ${position.y}px)`}}>
                 <div className={styles.header} onMouseDown={onMouseDown}>
                     <h2>{title}</h2>
-                    <button onClick={onClose} className={styles.closeButton}>Close</button>
+                    <button onClick={onClose} className={styles.closeButton}>{t("close")}</button>
                 </div>
                 <div className={styles.content}>
                     {children}

@@ -1,0 +1,43 @@
+.statsPage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .statsPage {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.playerInfo {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .playerInfo {
+        margin-bottom: 0;
+    }
+}
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.stats {
+    font-size: 1rem;
+    padding: 2vw;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}

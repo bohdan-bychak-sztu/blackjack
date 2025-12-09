@@ -30,7 +30,12 @@ const resources = {
             "hit": "Hit",
             "stand": "Stand",
             "autoActions": "Enable automatic actions",
-
+            "gamesPlayed": "Games Played",
+            "gamesWon": "Games Won",
+            "gamesLost": "Games Lost",
+            "blackjacks": "Blackjacks",
+            "gamesPushed": "Games Pushed",
+            "viewStats": "View Stats",
         }
     },
     uk: {
@@ -60,6 +65,12 @@ const resources = {
             "hit": "Взяти карту",
             "stand": "Зупинитися",
             "autoActions": "Увімкнути автоматичні дії",
+            "gamesPlayed": "Зіграно ігор",
+            "gamesWon": "Виграно ігор",
+            "gamesLost": "Програно ігор",
+            "blackjacks": "Блекджеків",
+            "gamesPushed": "Ігор у нічию",
+            "viewStats": "Переглянути статистику",
         }
     },
     es: {
@@ -89,6 +100,12 @@ const resources = {
             "hit": "Pedir Carta",
             "stand": "Plantarse",
             "autoActions": "Habilitar acciones automáticas",
+            "gamesPlayed": "Partidas Jugadas",
+            "gamesWon": "Partidas Ganadas",
+            "gamesLost": "Partidas Perdidas",
+            "blackjacks": "Blackjacks (Veintiuno)",
+            "gamesPushed": "Partidas Empatadas (Push)",
+            "viewStats": "Ver Estadísticas",
         }
     },
     zh: {
@@ -118,6 +135,12 @@ const resources = {
             "hit": "叫牌",
             "stand": "停牌",
             "autoActions": "启用自动操作",
+            "gamesPlayed": "已玩局数",
+            "gamesWon": "获胜局数",
+            "gamesLost": "输掉局数",
+            "blackjacks": "二十一点",
+            "gamesPushed": "平局局数",
+            "viewStats": "查看统计",
         }
     }
 };
