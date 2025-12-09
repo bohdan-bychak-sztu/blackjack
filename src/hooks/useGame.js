@@ -3,11 +3,13 @@ import {shuffle} from "../utils/GameUtil.js";
 import allCards from "../data/cards.js";
 
 export default function useGame(initialState) {
-    const [deck, setDeck] = useState(shuffle([...initialState]));
+    const [deck, setDeck] = useState(initialState);
     const [result, setResult] = useState(null);
     const [reveal, setReveal] = useState(false);
 
     const dealInitialCards = (playerHand, dealerHand) => {
+        if (deck.length < 4) return;
+
         let currentDeck = [...deck];
 
         const playerCards = [currentDeck.shift(), currentDeck.shift()];
@@ -25,7 +27,7 @@ export default function useGame(initialState) {
         dealerHand.clearHand();
         setResult(null);
         setReveal(false);
-        dealInitialCards(playerHand, dealerHand);
+        //dealInitialCards(playerHand, dealerHand);
     }
 
     return {deck, setDeck, result, setResult, reveal, setReveal, dealInitialCards, onReload};

@@ -1,0 +1,45 @@
+.container {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.chipsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.chip {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px dashed white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.chip:hover {
+    transform: scale(1.1);
+}
+
+.chip[data-value="1"] { background: #6c757d; }
+.chip[data-value="5"] { background: #dc3545; }
+.chip[data-value="25"] { background: #28a745; }
+.chip[data-value="100"] { background: #007bff; }
+.chip[data-value="500"] { background: #6f42c1; }
+
+.currentBet {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.balance {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

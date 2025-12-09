@@ -42,4 +42,6 @@ img{
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.4s;
+
+    margin-left: 15px;
 }

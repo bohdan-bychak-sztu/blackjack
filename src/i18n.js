@@ -1,0 +1,136 @@
+import i18n from 'i18next';
+import {initReactI18next} from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+const resources = {
+    en: {
+        translation: {
+            "welcome": "Welcome to Blackjack!",
+            'welcome.shortDesc': "Play the classic card game of Blackjack against the dealer. Try to get as close to 21 as possible without going over!",
+            "startGame": "Start Game",
+            "settings": "Settings",
+            "save": "Save Settings",
+            "currentPlayer": "Current Player",
+            "cardsLeft": "cards left in the deck",
+            "dealerHand": "Dealer's Hand",
+            "playerHand": "Player's Hand",
+            "balance": "Balance",
+            "currentBet": "Current Bet",
+            "placeBet": "Place Bet",
+            "configureSettings": "Configure your game settings",
+            "playerName": "Player Name:",
+            "numberOfDecks": "Number of Decks:",
+            "language": "Language:",
+            "userSelecting": "User Selecting",
+            "choseUser": "Choose User",
+            "addUser": "Add User",
+            "close": "Close",
+            "howToPlay": "How to play Blackjack",
+            "description": "The goal of Blackjack is to beat the dealer by having a hand total closer to 21 without exceeding it. Cards 2 through 10 are worth their face value, Jacks, Queens, and Kings are all worth 10, and an Ace can count as either 1 or 11. You start by placing a bet and receiving two cards. The dealer also receives two cards, one face up and one face down. If your initial two cards total 21 (a Blackjack), you win 3:2 immediately unless the dealer also has Blackjack, which is a tie, or \"Push.\" If you don't have Blackjack, you must decide whether to Hit (take another card), or Stand (keep your current total). You may also have options like Double Down (double your bet and take only one more card) or Split (separate a pair into two hands). If your hand total exceeds 21, you Bust and lose your bet immediately. Once all players have finished their actions, the dealer reveals their face-down card and must follow strict rules: they typically must hit until their total is 17 or more, and then stand. Finally, hands are compared: you win even money (1:1) if your hand total is higher than the dealer's or if the dealer busts. You lose if the dealer's total is higher than yours, and you push if you tie.",
+            "hit": "Hit",
+            "stand": "Stand",
+            "autoActions": "Enable automatic actions",
+
+        }
+    },
+    uk: {
+        translation: {
+            "welcome": "Ласкаво просимо до Блекджеку!",
+            "welcome.shortDesc": "Зіграйте в класичну карткову гру Блекджек проти дилера. Спробуйте набрати якомога ближче до 21, не перевищуючи цього значення!",
+            "startGame": "Розпочати гру",
+            "settings": "Налаштування",
+            "save": "Зберегти налаштування",
+            "currentPlayer": "Поточний гравець",
+            "cardsLeft": "карт залишилось у колоді",
+            "dealerHand": "Рука дилера",
+            "playerHand": "Рука гравця",
+            "balance": "Баланс",
+            "currentBet": "Поточна ставка",
+            "placeBet": "Зробити ставку",
+            "configureSettings": "Налаштуйте параметри гри",
+            "playerName": "Ім'я гравця:",
+            "numberOfDecks": "Кількість колод:",
+            "language": "Мова:",
+            "userSelecting": "Вибір користувача",
+            "choseUser": "Вибрати користувача",
+            "addUser": "Додати користувача",
+            "close": "Закрити",
+            "howToPlay": "Як грати в Блекджек",
+            "description": "Мета Блекджеку — обіграти дилера, набравши суму очок ближчу до 21, не перевищуючи його. Карти від 2 до 10 мають номінальну вартість, Валети, Дами та Королі вартують 10, а Туз може рахуватися як 1 або 11. Ви починаєте з розміщення ставки та отримання двох карт. Дилер також отримує дві карти: одну обличчям догори, а іншу обличчям донизу. Якщо ваші початкові дві карти дають у сумі 21 (Блекджек), ви негайно виграєте 3:2, якщо тільки дилер також не має Блекджеку, що є нічиєю, або «Пуш» (Push). Якщо у вас немає Блекджеку, ви повинні вирішити, чи брати ще карту (Hit), чи зупинитися (Stand), зберігши поточну суму. У вас також можуть бути такі опції, як Подвоєння (Double Down, подвоїти ставку і взяти лише одну додаткову карту) або Спліт (Split, розділити пару на дві руки). Якщо сума очок у вашій руці перевищує 21, ви «перебрали» (Bust) і негайно втрачаєте свою ставку. Після того, як усі гравці завершили свої дії, дилер відкриває свою карту обличчям донизу та повинен дотримуватися суворих правил: зазвичай вони повинні брати карту, доки їхня сума не досягне 17 або більше, а потім зупиняються. Нарешті, порівнюються руки: ви виграєте 1:1, якщо сума очок у вашій руці вища, ніж у дилера, або якщо дилер «перебрав». Ви програєте, якщо сума очок у дилера вища за вашу, і ви отримуєте «Пуш», якщо у вас нічия.",
+            "hit": "Взяти карту",
+            "stand": "Зупинитися",
+            "autoActions": "Увімкнути автоматичні дії",
+        }
+    },
+    es: {
+        translation: {
+            "welcome": "¡Bienvenido a Blackjack!",
+            "welcome.shortDesc": "Juega al clásico juego de cartas Blackjack contra el crupier. ¡Intenta acercarte lo más posible a 21 sin pasarte!",
+            "startGame": "Empezar Juego",
+            "settings": "Configuración",
+            "save": "Guardar Configuración",
+            "currentPlayer": "Jugador Actual",
+            "cardsLeft": "cartas restantes en la baraja",
+            "dealerHand": "Mano del Crupier",
+            "playerHand": "Mano del Jugador",
+            "balance": "Saldo",
+            "currentBet": "Apuesta Actual",
+            "placeBet": "Hacer Apuesta",
+            "configureSettings": "Configura tus ajustes de juego",
+            "playerName": "Nombre del Jugador:",
+            "numberOfDecks": "Número de Barajas:",
+            "language": "Idioma:",
+            "userSelecting": "Selección de Usuario",
+            "choseUser": "Elegir Usuario",
+            "addUser": "Añadir Usuario",
+            "close": "Cerrar",
+            "howToPlay": "¿Cómo jugar a Blackjack?",
+            "description": "El objetivo del Blackjack es vencer al crupier teniendo un total de mano más cercano a 21 sin excederlo. Las cartas del 2 al 10 valen su valor nominal, las Jotas, Reinas y Reyes valen 10, y un As puede contar como 1 u 11. Empiezas haciendo una apuesta y recibiendo dos cartas. El crupier también recibe dos cartas, una boca arriba y otra boca abajo. Si tus dos cartas iniciales suman 21 (un Blackjack), ganas 3:2 inmediatamente a menos que el crupier también tenga Blackjack, lo cual es un empate, o \"Push\" (Empuje). Si no tienes Blackjack, debes decidir si pides carta (Hit), o te plantas (Stand), manteniendo tu total actual. También puedes tener opciones como Doblar (Double Down, duplicar tu apuesta y tomar solo una carta más) o Dividir (Split, separar un par en dos manos). Si el total de tu mano excede 21, te pasas (Bust) y pierdes tu apuesta inmediatamente. Una vez que todos los jugadores han terminado sus acciones, el crupier revela su carta boca abajo y debe seguir reglas estrictas: generalmente debe pedir carta hasta que su total sea 17 o más, y luego plantarse. Finalmente, se comparan las manos: ganas dinero parejo (1:1) si el total de tu mano es superior al del crupier o si el crupier se pasa. Pierdes si el total del crupier es superior al tuyo, y hay \"Push\" si empatas.",
+            "hit": "Pedir Carta",
+            "stand": "Plantarse",
+            "autoActions": "Habilitar acciones automáticas",
+        }
+    },
+    zh: {
+        translation: {
+            "welcome": "欢迎来到二十一点！",
+            "welcome.shortDesc": "与庄家对战，玩经典纸牌游戏二十一点。尽量接近 21 点而不超过！",
+            "startGame": "开始游戏",
+            "settings": "设置",
+            "save": "保存设置",
+            "currentPlayer": "当前玩家",
+            "cardsLeft": "牌堆中剩余的牌",
+            "dealerHand": "庄家的牌",
+            "playerHand": "玩家的牌",
+            "balance": "余额",
+            "currentBet": "当前下注",
+            "placeBet": "下注",
+            "configureSettings": "配置您的游戏设置",
+            "playerName": "玩家姓名:",
+            "numberOfDecks": "牌堆数量:",
+            "language": "语言:",
+            "userSelecting": "用户选择",
+            "choseUser": "选择用户",
+            "addUser": "添加用户",
+            "close": "关闭",
+            "howToPlay": "如何玩二十一点",
+            "description": "二十一点的目标是让手牌点数总和尽可能接近 21 点而不超过，从而击败庄家。2 到 10 的牌按面值计点，J、Q、K 均计为 10 点，A 可以计为 1 或 11 点。您首先下注并收到两张牌。庄家也收到两张牌，一张面朝上，一张面朝下。如果您最初的两张牌总计 21 点（二十一点），您立即赢 3:2，除非庄家也有二十一点，则为平局，或称“Push”（平）。如果您没有二十一点，您必须决定是“Hit”（叫牌）还是“Stand”（停牌），保留当前总点数。您还可以选择加倍 (Double Down, 将赌注加倍并只拿一张牌) 或分牌 (Split, 将一对牌分成两手)。如果您的手牌点数总和超过 21 点，您就“Bust”（爆牌）并立即输掉赌注。一旦所有玩家完成操作，庄家将亮出底牌，并必须遵循严格的规则：庄家通常必须持续叫牌直到总点数达到 17 点或更多，然后停止。最后，比较手牌：如果您的手牌点数总和高于庄家，或者庄家爆牌，您赢取相等的赌注 (1:1)。如果庄家的总点数高于您，您输掉；如果点数相同，则为平局 (Push)。",
+            "hit": "叫牌",
+            "stand": "停牌",
+            "autoActions": "启用自动操作",
+        }
+    }
+};
+
+i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+        resources,
+        fallbackLng: 'en',
+        interpolation: {
+            escapeValue: false
+        }
+    });
+
+export default i18n;

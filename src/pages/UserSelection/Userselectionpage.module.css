@@ -1,0 +1,35 @@
+.user-option {
+    background-color: whitesmoke;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 10px;
+    position: relative;
+    user-select: none;
+}
+
+.user-option.active{
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.delete {
+    border-radius: 30%;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
