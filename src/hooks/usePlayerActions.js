@@ -9,7 +9,7 @@ export default function usePlayerActions(deck, setDeck, playerHand, dealerHand, 
 
         if (calculatePoints(currentPlayerCards) > 21) {
             setReveal(true);
-            setResult("Bust! Dealer wins.");
+            setResult("lose");
         }
     };
 
@@ -30,12 +30,15 @@ export default function usePlayerActions(deck, setDeck, playerHand, dealerHand, 
 
         const playerPoints = playerHand.points;
 
-        if (dealerPoints > 21 || playerPoints > dealerPoints) {
-            setResult("You win!");
-        } else if (playerPoints < dealerPoints) {
-            setResult("Dealer wins!");
-        } else{
-            setResult("It's a tie!");
+        if (playerPoints === 21 && playerPoints > dealerPoints) {
+            setResult("blackjack");
+        } else if (dealerPoints > 21 || playerPoints > dealerPoints) {
+            setResult("win");
+        } else if (dealerPoints === playerPoints) {
+            setResult("push");
+        }
+        else {
+            setResult("lose");
         }
 
     }

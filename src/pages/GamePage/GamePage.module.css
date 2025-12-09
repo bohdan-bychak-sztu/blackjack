@@ -1,0 +1,8 @@
+.gamePage {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animateEnd {
+    transform: scale(1.1);
+    opacity: 0.3;
+}

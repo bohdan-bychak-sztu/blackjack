@@ -1,16 +1,22 @@
 import React from "react";
 import Card from "../Card/Card.jsx";
 import styles from './PlayerHand.module.css';
-import {calculatePoints} from "../../utils/GameUtil.js";
+import { calculatePoints } from "../../utils/GameUtil.js";
+import useAnimatedHand from "../../hooks/useAnimatedHand.js";
 
-function PlayerHand({name, cards = [], reveal = true, isDealer = false}) {
+function PlayerHand({ name, cards = [], reveal = true, isDealer = false }) {
+    const { animatedCards, removingCards } = useAnimatedHand(cards);
+
     return (
         <div className={styles['player-hand']}>
             <div className={styles['player-hand-cards']}>
-                {cards.map((card, index) => (
+                {animatedCards.map((card, index) => (
                     <Card
+                        className={`${styles['card-enter']} ${
+                            removingCards.includes(card) ? styles['card-remove'] : ''
+                        }`}
                         style={{
-                            rotate: `${index * 10 - (cards.length - 1) * 2.5}deg`,
+                            rotate: `${index * 10 - (animatedCards.length - 1) * 2.5}deg`,
                             left: `${index * 20}px`,
                         }}
                         {...card}
@@ -22,7 +28,7 @@ function PlayerHand({name, cards = [], reveal = true, isDealer = false}) {
             <div className={styles['player-hand-info']}>
                 <h2>{name}'s Hand</h2>
                 <span className={styles['points-label']}>
-                    {reveal || !isDealer ? calculatePoints(cards) : calculatePoints(cards.slice(1))}
+                    {reveal || !isDealer ? calculatePoints(animatedCards) : calculatePoints(animatedCards.slice(1))}
                 </span>
             </div>
         </div>

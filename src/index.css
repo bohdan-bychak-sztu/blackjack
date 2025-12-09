@@ -30,6 +30,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 h1 {
@@ -66,5 +68,28 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, #064420, #0b6623, #1b8a5a);
+  background-size: 200% 200%;
+  animation: darkGreenPulse 6s ease-in-out infinite;
+}
+
+@keyframes darkGreenPulse {
+  0%, 100% {
+    background-position: 0 50%;
+    filter: brightness(0.9);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: brightness(1.1);
   }
 }

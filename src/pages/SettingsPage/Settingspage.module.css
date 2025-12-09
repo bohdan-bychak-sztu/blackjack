@@ -16,13 +16,15 @@
 
 .formGroup {
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .label {
-    display: block;
+    font-size: 1rem;
+    font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #34495e;
-    font-weight: 500;
+    color: #333;
 }
 
 .input {
@@ -65,4 +67,16 @@
 
 .button:hover {
     background: #27ae60;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
+
+.checkbox:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
 }

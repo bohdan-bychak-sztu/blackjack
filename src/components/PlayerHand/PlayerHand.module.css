@@ -7,7 +7,6 @@
     text-align: center;
     margin: 16px auto;
     display: flex;
-
 }
 
 .player-hand h2 {
@@ -21,7 +20,7 @@
     height: 140px;
     width: 170px;
 
-    div{
+    div {
         position: absolute;
         left: 20px;
     }
@@ -39,4 +38,52 @@
     border: 1px solid #ccc;
     border-radius: 50%;
     padding: 18px;
+}
+
+.card-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: cardEnter 0.5s forwards;
+}
+
+@keyframes cardEnter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-remove {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card-flip {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+}
+
+.winning-hand {
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+}
+
+.card-enter {
+    transform: translateX(-100px);
+    animation: deal 0.5s forwards;
+}
+
+@keyframes deal {
+    to {
+        transform: translateX(0);
+    }
 }

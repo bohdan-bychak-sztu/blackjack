@@ -1,10 +1,11 @@
 import React, {useContext} from "react";
 import styles from './Userselectionpage.module.css';
 import AppContext from "../../contexts/AppContext.js";
+import {useTranslation} from "react-i18next";
 
 export default function UserSelectionPage() {
     const {players, settings} = useContext(AppContext);
-
+    const { t } = useTranslation();
 
     const onAddUser = () => {
         const newPlayer = {
@@ -27,7 +28,7 @@ export default function UserSelectionPage() {
 
     return (
         <div>
-            <h2>Обери профіль гравця</h2>
+            <h2>{t("choseUser")}</h2>
             <div className={styles['user-options']}>
                 {players.players.map((player) => (
                     <div key={player.id} className={styles['user-option'] + (players.activePlayer && players.activePlayer.id === player.id ? ` ${styles['active']}` : '')}
@@ -39,7 +40,7 @@ export default function UserSelectionPage() {
                 ))}
             </div>
 
-            <button onClick={onAddUser}>Додати гравця</button>
+            <button onClick={onAddUser}>{t("addUser")}</button>
         </div>
     );
 }
