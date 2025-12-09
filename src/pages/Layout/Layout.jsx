@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link, NavLink, Outlet} from "react-router";
 import styles from './Layout.module.css';
 import Modal from "../../components/Modal/Modal.jsx";

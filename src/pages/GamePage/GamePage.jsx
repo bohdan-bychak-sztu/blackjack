@@ -80,15 +80,14 @@ function GamePage() {
         initializeDeck()
     }, [numberOfDecks]);
 
-    /*useEffect(() => {
-        if ((deck.length > 0 && playerHand.hand.length === 0) || deck.length === allCards.length * numberOfDecks) {
-            dealInitialCards(playerHand, dealerHand);
-        }
-    }, [deck]);*/
-
     useEffect(() => {
         if (result) {
             let sound;
+
+            if (result && players.activePlayer.id) {
+                players.updatePlayerStats(players.activePlayer.id, result);
+            }
+
             if (result === "win") {
                 sound = winSound;
             } else if (result === "lose") {

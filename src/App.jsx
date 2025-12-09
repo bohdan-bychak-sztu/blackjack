@@ -5,6 +5,7 @@ import Layout from "./pages/Layout/Layout.jsx";
 import StartPage from "./pages/StartPage/StartPage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
 import AppContextProvider from "./contexts/AppContextProvider.jsx";
+import PlayerStatsPage from "./pages/PlayerStatsPage/PlayerStatsPage.jsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                         <Route path="/start" element={<StartPage/>}/>
                         <Route path="/game" element={<GamePage/>}/>
                         <Route path="/result" element={<ResultPage/>}/>
+                        <Route path="/player/:id" element={<PlayerStatsPage />} />
                         <Route path="*" element={<h1>404 Not Found</h1>}/>
                     </Route>
                 </Routes>

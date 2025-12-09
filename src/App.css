@@ -1,6 +1,28 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+    max-height: 100vh;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.scalable-content {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+}
+
+@media (max-height: 768px) {
+    .scalable-content {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-height: 480px) {
+    .scalable-content {
+        transform: scale(0.7);
+    }
 }

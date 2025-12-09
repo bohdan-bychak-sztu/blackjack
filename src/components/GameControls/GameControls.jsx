@@ -11,7 +11,7 @@ export default function GameControls({ onHit, onStand, disabled }) {
         if (settings.userSettings.autoActions && !disabled) {
             const timer = setTimeout(() => {
                 onStand();
-            }, 2000);
+            }, 3000);
             return () => clearTimeout(timer);
         }
     }, [settings.userSettings.autoActions, disabled, onStand]);

@@ -19,6 +19,7 @@ export default function useBalance(initialBalance = 1000) {
             }
             return player;
         });
+        console.log('Balance updated in useBalance:', balance);
         localStorage.setItem('players', JSON.stringify(updatedPlayers));
     }, [balance]);
 
