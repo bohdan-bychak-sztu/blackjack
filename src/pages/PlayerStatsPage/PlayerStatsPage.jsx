@@ -1,35 +1,42 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import AppContext from "../../contexts/AppContext.js";
 import styles from "./PlayerStatsPage.module.css";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
+import usePlayerStore from "../../store/playerStore.js";
 
 export default function PlayerStatsPage() {
     const { id } = useParams();
     const navigate = useNavigate();
-    const { players } = useContext(AppContext);
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
-    const player = players.players.find((player) => player.id.toString() === id);
+    const player = usePlayerStore((state) => state.players[id]);
+    const settings = usePlayerStore((state) => state.settings[id]);
+    const stats = usePlayerStore((state) => state.statistics[id]);
 
     if (!player) {
-        return <div className={styles.error}>Player not found</div>;
+        return (
+            <div className={styles.error}>
+                Player not found
+                <button onClick={() => navigate('/')}>Go Back</button>
+            </div>
+        );
     }
 
     return (
         <div className={styles.statsPage}>
             <div className={styles.playerInfo}>
                 <div>
-                    <h2>{player.settings.name}</h2>
+                    <h2>{settings?.name || "Unknown Player"}</h2>
+
                     <p>{t("balance")}: ${player.balance}</p>
                 </div>
             </div>
             <div className={styles.stats}>
-                <p>{t("gamesPlayed")}: {player.stats.gamesPlayed}</p>
-                <p>{t("gamesWon")}: {player.stats.gamesWon}</p>
-                <p>{t("gamesLost")}: {player.stats.gamesLost || 0}</p>
-                <p>{t("blackjacks")}: {player.stats.blackjacks || 0}</p>
-                <p>{t("gamesPushed")}: {player.stats.gamesPushed || 0}</p>
+                <p>{t("gamesPlayed")}: {stats?.gamesPlayed || 0}</p>
+                <p>{t("gamesWon")}: {stats?.gamesWon || 0}</p>
+                <p>{t("gamesLost")}: {stats?.gamesLost || 0}</p>
+                <p>{t("blackjacks")}: {stats?.blackjacks || 0}</p>
+                <p>{t("gamesPushed")}: {stats?.gamesPushed || 0}</p>
             </div>
         </div>
     );

@@ -1,14 +1,16 @@
-import {useState} from "react";
-import {shuffle} from "../utils/GameUtil.js";
+import { useState } from "react";
+import { shuffle } from "../utils/GameUtil.js";
 import allCards from "../data/cards.js";
 
-export default function useGame(initialState) {
+export default function useGame(initialState, deckCount = 1) {
     const [deck, setDeck] = useState(initialState);
     const [result, setResult] = useState(null);
     const [reveal, setReveal] = useState(false);
 
     const dealInitialCards = (playerHand, dealerHand) => {
-        if (deck.length < 4) return;
+        if (deck.length < 4) {
+            return;
+        }
 
         let currentDeck = [...deck];
 
@@ -21,7 +23,9 @@ export default function useGame(initialState) {
     };
 
     const onReload = (playerHand, dealerHand) => {
-        const reshuffled = shuffle([...allCards]);
+        const newDeckRaw = Array(deckCount).fill(allCards).flat();
+        const reshuffled = shuffle(newDeckRaw);
+
         setDeck(reshuffled);
         playerHand.clearHand();
         dealerHand.clearHand();
@@ -29,5 +33,5 @@ export default function useGame(initialState) {
         setReveal(false);
     }
 
-    return {deck, setDeck, result, setResult, reveal, setReveal, dealInitialCards, onReload};
+    return { deck, setDeck, result, setResult, reveal, setReveal, dealInitialCards, onReload };
 }

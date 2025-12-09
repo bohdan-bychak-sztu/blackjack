@@ -36,6 +36,7 @@ const resources = {
             "blackjacks": "Blackjacks",
             "gamesPushed": "Games Pushed",
             "viewStats": "View Stats",
+            "resetBalance" : "Reset Balance",
         }
     },
     uk: {
@@ -71,6 +72,8 @@ const resources = {
             "blackjacks": "Блекджеків",
             "gamesPushed": "Ігор у нічию",
             "viewStats": "Переглянути статистику",
+            "resetBalance" : "Скинути баланс",
+
         }
     },
     es: {
@@ -106,6 +109,8 @@ const resources = {
             "blackjacks": "Blackjacks (Veintiuno)",
             "gamesPushed": "Partidas Empatadas (Push)",
             "viewStats": "Ver Estadísticas",
+            "resetBalance" : "Restablecer saldo",
+
         }
     },
     zh: {
@@ -141,6 +146,8 @@ const resources = {
             "blackjacks": "二十一点",
             "gamesPushed": "平局局数",
             "viewStats": "查看统计",
+            "resetBalance" : "重置余额",
+
         }
     }
 };

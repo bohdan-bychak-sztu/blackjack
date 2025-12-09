@@ -1,35 +1,50 @@
-import React, {useContext} from "react";
+import React from "react";
 import styles from './Userselectionpage.module.css';
-import AppContext from "../../contexts/AppContext.js";
-import {useTranslation} from "react-i18next";
-import {Link, useNavigate} from "react-router";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
+import usePlayerStore from "../../store/playerStore.js";
 
 export default function UserSelectionPage() {
-    const {players, settings} = useContext(AppContext);
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
+    const playersMap = usePlayerStore((state) => state.players);
+    const settingsMap = usePlayerStore((state) => state.settings);
+    const activePlayerId = usePlayerStore((state) => state.activePlayerId);
+
+    const addPlayer = usePlayerStore((state) => state.addPlayer);
+    const removePlayer = usePlayerStore((state) => state.removePlayer);
+    const setActivePlayer = usePlayerStore((state) => state.setActivePlayer);
+
+    const playersList = Object.values(playersMap).map((player) => ({
+        ...player,
+        name: settingsMap[player.id]?.name || 'Unknown', // Дістаємо ім'я з settings
+    }));
+
     const onAddUser = () => {
+        const newName = `Player ${Object.keys(playersMap).length + 1}`;
+
         const newPlayer = {
             id: Date.now(),
+            balance: 1000,
+            settings: {
+                name: newName,
+                deckNumber: 1,
+                autoActions: false
+            },
             stats: {
                 gamesPlayed: 0,
                 gamesWon: 0,
                 gamesLost: 0,
                 gamesPushed: 0,
                 blackjacks: 0
-            },
-            settings: {
-                name: `Player ${players.players.length + 1}`,
-            },
-            balance: 1000,
+            }
         };
-        players.addPlayer(newPlayer);
+        addPlayer(newPlayer);
     };
 
     const onSelectUser = (userId) => {
-        players.setActivePlayer(userId);
-        settings.changeUser(userId);
+        setActivePlayer(userId);
     };
 
     const onViewStats = (e, userId) => {
@@ -41,13 +56,13 @@ export default function UserSelectionPage() {
         <div>
             <h2>{t("choseUser")}</h2>
             <div className={styles['user-options']}>
-                {players.players.map((player) => (
+                {playersList.map((player) => (
                     <div
                         key={player.id}
-                        className={`${styles['user-option']} ${players.activePlayer && players.activePlayer.id === player.id ? styles['active'] : ''}`}
+                        className={`${styles['user-option']} ${activePlayerId === player.id ? styles['active'] : ''}`}
                         onClick={() => onSelectUser(player.id)}
                     >
-                        <span>{player.settings.name}</span>
+                        <span>{player.name}</span>
                         <div className={styles['actions']}>
                             <button
                                 className={styles['stats-link']}
@@ -59,7 +74,7 @@ export default function UserSelectionPage() {
                                 className={styles['delete']}
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    players.removePlayer(player.id);
+                                    removePlayer(player.id);
                                 }}
                             >
                                 X
