@@ -37,6 +37,15 @@ const resources = {
             "gamesPushed": "Games Pushed",
             "viewStats": "View Stats",
             "resetBalance" : "Reset Balance",
+            "win" : "Congratulations! You won the game.",
+            "lose" : "Better luck next time! You lost the game.",
+            "push" : "It's a draw! No one wins this round.",
+            "blackjack" : "Blackjack! You hit the perfect score!",
+            "result": "Result",
+            "playAgain": "Play Again",
+            "bet": "Bet",
+            "chipsControlHint": "Left click to Add • Right click to Remove",
+
         }
     },
     uk: {
@@ -73,6 +82,14 @@ const resources = {
             "gamesPushed": "Ігор у нічию",
             "viewStats": "Переглянути статистику",
             "resetBalance" : "Скинути баланс",
+            "win": "Вітаємо! Ви виграли гру.",
+            "lose": "Пощастить наступного разу! Ви програли гру.",
+            "push": "Нічия! Цей раунд без переможця.",
+            "blackjack": "Блекджек! Ви набрали ідеальний рахунок!",
+            "result": "Результат",
+            "playAgain": "Зіграти ще раз",
+            "bet": "Ставка",
+            "chipsControlHint": "Лівий клік — Додати • Правий клік — Видалити",
 
         }
     },
@@ -110,6 +127,14 @@ const resources = {
             "gamesPushed": "Partidas Empatadas (Push)",
             "viewStats": "Ver Estadísticas",
             "resetBalance" : "Restablecer saldo",
+            "win": "¡Felicidades! Ganaste la partida.",
+            "lose": "¡Más suerte la próxima vez! Perdiste la partida.",
+            "push": "¡Es un empate! Nadie gana esta ronda.",
+            "blackjack": "¡Blackjack! ¡Alcanzaste la puntuación perfecta!",
+            "result": "Resultado",
+            "playAgain": "Jugar de Nuevo",
+            "bet": "Apostar",
+            "chipsControlHint": "Clic izquierdo para Añadir • Clic derecho para Eliminar",
 
         }
     },
@@ -147,6 +172,14 @@ const resources = {
             "gamesPushed": "平局局数",
             "viewStats": "查看统计",
             "resetBalance" : "重置余额",
+            "win": "恭喜！您赢得了本局游戏。",
+            "lose": "下次好运！您输掉了本局游戏。",
+            "push": "平局！本轮无人获胜。",
+            "blackjack": "二十一点！您获得了满分！",
+            "result": "结果",
+            "playAgain": "再玩一次",
+            "bet": "下注",
+            "chipsControlHint": "左键点击添加 • 右键点击移除",
 
         }
     }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Confetti from "react-confetti";
 import PlayerHand from "../../components/PlayerHand/PlayerHand.jsx";
 import GameControls from "../../components/GameControls/GameControls.jsx";
@@ -6,7 +6,6 @@ import allCards from "../../data/cards.js";
 import Modal from "../../components/Modal/Modal.jsx";
 import ResultPage from "../ResultPage.jsx";
 import useHand from "../../hooks/useHand.js";
-import usePlayerActions from "../../hooks/usePlayerActions.js";
 import useGame from "../../hooks/useGame.js";
 import {calculateWinnings, shuffle} from "../../utils/GameUtil.js";
 import ChipsControl from "../../components/ChipsControl/ChipsControl.jsx";
@@ -15,17 +14,16 @@ import loseSoundFile from "../../assets/sounds/lose.mp3";
 import winSoundFile from "../../assets/sounds/win.mp3";
 import blackjackSoundFile from "../../assets/sounds/blackjack.mp3";
 import useSound from "../../hooks/useSound.js";
-import { useTranslation } from "react-i18next";
-import usePlayerStore from "../../store/playerStore.js";
+import {useTranslation} from "react-i18next";
+import usePlayerStore from "../../store/playerStore.js"; // Переконайтеся, що шлях правильний
 
 function GamePage() {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     const activePlayerId = usePlayerStore((state) => state.activePlayerId);
-
     const player = usePlayerStore((state) => state.players[activePlayerId]);
+    const actualBalance = player?.balance || 0;
     const settings = usePlayerStore((state) => state.settings[activePlayerId]);
-
     const updatePlayerBalance = usePlayerStore((state) => state.updatePlayerBalance);
     const registerGameResult = usePlayerStore((state) => state.registerGameResult);
 
@@ -45,31 +43,55 @@ function GamePage() {
     const playerHand = useHand();
     const dealerHand = useHand();
 
+
     const {
         deck,
         setDeck,
         result,
         setResult,
         reveal,
-        setReveal,
         dealInitialCards,
-        onReload
+        onReload,
+        hit,
+        stand
     } = useGame([], numberOfDecks);
 
-    const { onHit, onStand } = usePlayerActions(deck, setDeck, playerHand, dealerHand, setReveal, setResult);
+    const handleHit = () => {
+        hit(playerHand);
+    };
+
+    const handleStand = () => {
+        stand(playerHand, dealerHand);
+    };
+
+    const visualBalance = actualBalance - currentBet;
 
     const handleBet = (amount) => {
-        // Перевірка, щоб не піти в мінус
-        if (currentBalance - amount < 0) return;
+        if (amount > 0) {
+            if (currentBet + amount <= actualBalance) {
+                setCurrentBet((prev) => prev + amount);
+            }
+        } else {
+            if (currentBet + amount >= 0) {
+                setCurrentBet((prev) => prev + amount);
+            }
+        }
+    };
 
-        setCurrentBet((prev) => prev + amount);
-        updatePlayerBalance(activePlayerId, currentBalance - amount);
+    const handleClearBet = () => {
+        setCurrentBet(0);
     };
 
     const confirmBet = () => {
-        if (currentBet > 0) {
+        if (currentBet === 0) return;
+
+        if (actualBalance >= currentBet) {
+            updatePlayerBalance(activePlayerId, actualBalance - currentBet);
             setIsBetPlaced(true);
             dealInitialCards(playerHand, dealerHand);
+        } else {
+            alert(t("insufficientFunds"));
+            handleClearBet();
         }
     };
 
@@ -82,7 +104,7 @@ function GamePage() {
         if (result) {
             const winnings = calculateWinnings(currentBet, result);
             if (winnings > 0) {
-                updatePlayerBalance(activePlayerId, player?.balance + winnings);
+                updatePlayerBalance(activePlayerId, actualBalance + winnings);
             }
 
             if (activePlayerId) {
@@ -106,18 +128,23 @@ function GamePage() {
         }
     }, [result]);
 
+    const handleRestart = () => {
+        setShowModal(false);
+        onReload(playerHand, dealerHand);
+    };
+
     return (
         <div className={`${styles.gamePage} ${isAnimating ? styles.animateEnd : ''}`}>
-            {(result === "win" || result === "blackjack") && <Confetti />}
+            {(result === "win" || result === "blackjack") && <Confetti/>}
 
             <div>{t("currentPlayer")}: {playerName}</div>
             <div>{deck.length} {t("cardsLeft")}</div>
 
-            <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true} />
-            <PlayerHand name="Player" cards={playerHand.hand} />
+            <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true}/>
+            <PlayerHand name="Player" cards={playerHand.hand}/>
 
             <ChipsControl
-                balance={currentBalance}
+                balance={visualBalance}
                 currentBet={currentBet}
                 onBet={handleBet}
                 isBetPlaced={isBetPlaced}
@@ -140,18 +167,16 @@ function GamePage() {
                 </>
             )}
 
-            {isBetPlaced ? <GameControls onHit={onHit} onStand={onStand} disabled={result !== null} /> : null}
+            {isBetPlaced ? (
+                <GameControls
+                    onHit={handleHit}
+                    onStand={handleStand}
+                    disabled={result !== null}
+                />
+            ) : null}
 
-            <Modal isOpen={showModal} title="Result" onClose={() => {
-                setShowModal(false);
-                setResult(null);
-                onReload(playerHand, dealerHand);
-            }}>
-                <ResultPage result={result} onRestart={() => {
-                    setShowModal(false);
-                    setResult(null);
-                    onReload(playerHand, dealerHand);
-                }} />
+            <Modal isOpen={showModal} title={t("result")} onClose={handleRestart}>
+                <ResultPage result={t(`${result}`)} onRestart={handleRestart}/>
             </Modal>
         </div>
     );

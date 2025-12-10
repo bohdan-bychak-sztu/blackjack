@@ -1,33 +1,51 @@
-import styles from './Chipscontrol.module.css';
-import {useTranslation} from "react-i18next";
-import {CHIPS_VALUES} from "../../utils/GameUtil.js";
+import React from "react";
+import { CHIPS_VALUES } from "../../utils/GameUtil.js"; // Перевірте шлях
+import styles from "./ChipsControl.module.css";
+import { useTranslation } from "react-i18next";
 
-export default function ChipsControl({balance, currentBet, onBet, isBetPlaced = false}) {
+export default function ChipsControl({ balance, currentBet, onBet, isBetPlaced }) {
     const { t } = useTranslation();
 
-    const handleChipClick = (value) => {
-        if (balance >= value) {
-            onBet(value);
+    const handleRightClick = (e, value) => {
+        e.preventDefault();
+        if (!isBetPlaced) {
+            onBet(-value);
         }
     };
 
     return (
         <div className={styles.container}>
-            <div className={styles.balance}>{t("balance")}: ${balance}</div>
-            <div className={styles.currentBet}>{t("currentBet")}: ${currentBet}</div>
-            {!isBetPlaced ? <div className={styles.chipsContainer}>
+            <div className={styles.infoPanel}>
+                <div className={styles.infoItem}>
+                    <span className={styles.infoLabel}>{t("balance")}</span>
+                    <span>${balance}</span>
+                </div>
+                <div className={styles.infoItem}>
+                    <span className={styles.infoLabel}>{t("bet")}</span>
+                    <span>${currentBet}</span>
+                </div>
+            </div>
+
+            <div className={styles.chipsRow}>
                 {CHIPS_VALUES.map((value) => (
-                    <div
+                    <button
                         key={value}
-                        className={styles.chip}
-                        data-value={value}
-                        onClick={() => handleChipClick(value)}
+                        className={`${styles.chip} ${styles[`chip${value}`]}`}
+                        disabled={isBetPlaced || (balance < value && currentBet === 0)}
+                        onClick={() => onBet(value)}
+                        onContextMenu={(e) => handleRightClick(e, value)}
+                        title={`Add $${value} (Right click to remove)`}
                     >
-                        ${value}
-                    </div>
+                        {value}
+                    </button>
                 ))}
-            </div> : null
-            }
+            </div>
+
+            {!isBetPlaced && (
+                <p className={styles.hint}>
+                    {t("chipsControlHint")}
+                </p>
+            )}
         </div>
     );
 }
