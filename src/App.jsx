@@ -4,14 +4,11 @@ import {HashRouter, Route, Routes} from "react-router";
 import Layout from "./pages/Layout/Layout.jsx";
 import StartPage from "./pages/StartPage/StartPage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
-import AppContextProvider from "./contexts/AppContextProvider.jsx";
 import PlayerStatsPage from "./pages/PlayerStatsPage/PlayerStatsPage.jsx";
-
 function App() {
 
 
     return (
-        <AppContextProvider>
             <HashRouter>
                 <Routes>
                     <Route element={<Layout/>}>
@@ -24,7 +21,6 @@ function App() {
                     </Route>
                 </Routes>
             </HashRouter>
-        </AppContextProvider>
     )
 }
 

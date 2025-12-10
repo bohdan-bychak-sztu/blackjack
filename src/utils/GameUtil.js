@@ -31,3 +31,13 @@ export function calculatePoints(cards) {
 
     return points;
 }
+
+export const CHIPS_VALUES = [1, 5, 25, 100, 500];
+
+export const calculateWinnings = (bet, result) => {
+    if (result === 'win') return bet * 2;
+    // Math.floor тут гарна ідея, щоб уникнути дробів
+    if (result === 'blackjack') return Math.floor(bet * 2.5);
+    if (result === 'push') return bet;
+    return 0;
+};

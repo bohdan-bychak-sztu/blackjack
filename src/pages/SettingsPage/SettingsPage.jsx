@@ -1,27 +1,37 @@
 import {Formik, Field, Form} from 'formik';
-import {useContext} from "react";
 import styles from './SettingsPage.module.css';
-import AppContext from "../../contexts/AppContext.js";
 import {useTranslation} from "react-i18next";
+import usePlayerStore from "../../store/playerStore.js";
 
 export default function SettingsPage() {
     const {t, i18n} = useTranslation();
 
-    const {players, settings} = useContext(AppContext);
+    const activePlayerId = usePlayerStore(state => state.activePlayerId);
+    const userSettings = usePlayerStore((state) =>
+        activePlayerId ? state.settings[activePlayerId] : {}
+    );
+
+    const playerCount = usePlayerStore((state) => Object.keys(state.players).length);
+    const updatePlayerSettings = usePlayerStore((state) => state.updatePlayerSettings);
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
 
+    if (!activePlayerId) {
+        return <div className={styles.container}><h3>{t("selectPlayerFirst")}</h3></div>;
+    }
+
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>{t("configureSettings")}</h2>
             <Formik
+                enableReinitialize={true}
                 initialValues={{
-                    deckNumber: settings.userSettings.deckNumber || 1,
-                    name: settings.userSettings.name || `Player ${players.players.length + 1}`,
+                    deckNumber: userSettings?.deckNumber || 1,
+                    name: userSettings?.name || `Player ${playerCount + 1}`,
                     language: i18n.language || 'en',
-                    autoActions: settings.userSettings.autoActions || false
+                    autoActions: userSettings?.autoActions || false
                 }}
                 onSubmit={(values) => {
                     const newPlayerSettings = {
@@ -29,8 +39,7 @@ export default function SettingsPage() {
                         name: values.name,
                         autoActions: values.autoActions,
                     };
-                    settings.setSettings(newPlayerSettings);
-                    players.updatePlayer(players.activePlayer.id, newPlayerSettings);
+                    updatePlayerSettings(activePlayerId, newPlayerSettings);
                     changeLanguage(values.language);
                 }}
             >
