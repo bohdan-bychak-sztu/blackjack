@@ -2,7 +2,8 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "./PlayerStatsPage.module.css";
 import { useTranslation } from "react-i18next";
-import usePlayerStore from "../../store/playerStore.js";
+
+import usePlayerStore from "../../store/useStore";
 
 export default function PlayerStatsPage() {
     const { id } = useParams();
@@ -16,8 +17,10 @@ export default function PlayerStatsPage() {
     if (!player) {
         return (
             <div className={styles.error}>
-                Player not found
-                <button onClick={() => navigate('/')}>Go Back</button>
+                {t("playerNotFound") || "Player not found"}
+                <button onClick={() => navigate('/')} className={styles.backButton}>
+                    {t("goBack") || "Go Back"}
+                </button>
             </div>
         );
     }
@@ -38,6 +41,9 @@ export default function PlayerStatsPage() {
                 <p>{t("blackjacks")}: {stats?.blackjacks || 0}</p>
                 <p>{t("gamesPushed")}: {stats?.gamesPushed || 0}</p>
             </div>
+            <button onClick={() => navigate('/')} className={styles.backButton}>
+                {t("backToMenu") || "Back"}
+            </button>
         </div>
     );
 }

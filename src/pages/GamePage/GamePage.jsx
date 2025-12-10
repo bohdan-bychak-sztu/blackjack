@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import PlayerHand from "../../components/PlayerHand/PlayerHand.jsx";
 import GameControls from "../../components/GameControls/GameControls.jsx";
@@ -7,29 +7,25 @@ import Modal from "../../components/Modal/Modal.jsx";
 import ResultPage from "../ResultPage.jsx";
 import useHand from "../../hooks/useHand.js";
 import useGame from "../../hooks/useGame.js";
-import {calculateWinnings, shuffle} from "../../utils/GameUtil.js";
+import { calculateWinnings, shuffle } from "../../utils/GameUtil.js";
 import ChipsControl from "../../components/ChipsControl/ChipsControl.jsx";
 import styles from './GamePage.module.css';
 import loseSoundFile from "../../assets/sounds/lose.mp3";
 import winSoundFile from "../../assets/sounds/win.mp3";
 import blackjackSoundFile from "../../assets/sounds/blackjack.mp3";
 import useSound from "../../hooks/useSound.js";
-import {useTranslation} from "react-i18next";
-import usePlayerStore from "../../store/playerStore.js"; // Переконайтеся, що шлях правильний
+import { useTranslation } from "react-i18next";
+import { useActivePlayer, useGameActions } from "../../store/selectors";
 
 function GamePage() {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
-    const activePlayerId = usePlayerStore((state) => state.activePlayerId);
-    const player = usePlayerStore((state) => state.players[activePlayerId]);
+    const player = useActivePlayer();
+    const { updateBalance, registerResult } = useGameActions();
+
+    const numberOfDecks = player?.settings?.deckNumber || 1;
+    const playerName = player?.settings?.name || "Player";
     const actualBalance = player?.balance || 0;
-    const settings = usePlayerStore((state) => state.settings[activePlayerId]);
-    const updatePlayerBalance = usePlayerStore((state) => state.updatePlayerBalance);
-    const registerGameResult = usePlayerStore((state) => state.registerGameResult);
-
-    const numberOfDecks = settings?.deckNumber || 1;
-    const playerName = settings?.name || "Player";
-    const currentBalance = player?.balance || 0;
 
     const [isAnimating, setIsAnimating] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -42,7 +38,6 @@ function GamePage() {
 
     const playerHand = useHand();
     const dealerHand = useHand();
-
 
     const {
         deck,
@@ -83,10 +78,11 @@ function GamePage() {
     };
 
     const confirmBet = () => {
+        if (!player) return;
         if (currentBet === 0) return;
 
         if (actualBalance >= currentBet) {
-            updatePlayerBalance(activePlayerId, actualBalance - currentBet);
+            updateBalance(player.id, actualBalance - currentBet);
             setIsBetPlaced(true);
             dealInitialCards(playerHand, dealerHand);
         } else {
@@ -103,12 +99,12 @@ function GamePage() {
     useEffect(() => {
         if (result) {
             const winnings = calculateWinnings(currentBet, result);
-            if (winnings > 0) {
-                updatePlayerBalance(activePlayerId, actualBalance + winnings);
-            }
 
-            if (activePlayerId) {
-                registerGameResult(activePlayerId, result);
+            if (player) {
+                if (winnings > 0) {
+                    updateBalance(player.id, actualBalance + winnings);
+                }
+                registerResult(player.id, result);
             }
 
             if (result === "win") winSound.play();
@@ -133,15 +129,19 @@ function GamePage() {
         onReload(playerHand, dealerHand);
     };
 
+    if (!player) {
+        return <div className={styles.loading}>Loading player data...</div>;
+    }
+
     return (
         <div className={`${styles.gamePage} ${isAnimating ? styles.animateEnd : ''}`}>
-            {(result === "win" || result === "blackjack") && <Confetti/>}
+            {(result === "win" || result === "blackjack") && <Confetti />}
 
             <div>{t("currentPlayer")}: {playerName}</div>
             <div>{deck.length} {t("cardsLeft")}</div>
 
-            <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true}/>
-            <PlayerHand name="Player" cards={playerHand.hand}/>
+            <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true} />
+            <PlayerHand name="Player" cards={playerHand.hand} />
 
             <ChipsControl
                 balance={visualBalance}
@@ -156,10 +156,10 @@ function GamePage() {
                         {t("placeBet")}
                     </button>
 
-                    {currentBalance < 10 && currentBet === 0 && (
+                    {actualBalance < 10 && currentBet === 0 && (
                         <button
                             className={styles.resetButton}
-                            onClick={() => updatePlayerBalance(activePlayerId, 1000)}
+                            onClick={() => updateBalance(player.id, 1000)}
                         >
                             {t("resetBalance")} ($1000)
                         </button>
@@ -176,7 +176,7 @@ function GamePage() {
             ) : null}
 
             <Modal isOpen={showModal} title={t("result")} onClose={handleRestart}>
-                <ResultPage result={t(`${result}`)} onRestart={handleRestart}/>
+                <ResultPage result={t(`${result}`)} onRestart={handleRestart} />
             </Modal>
         </div>
     );

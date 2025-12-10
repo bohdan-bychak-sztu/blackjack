@@ -1,24 +1,22 @@
-import {Formik, Field, Form} from 'formik';
+import { Formik, Field, Form } from 'formik';
 import styles from './SettingsPage.module.css';
-import {useTranslation} from "react-i18next";
-import usePlayerStore from "../../store/playerStore.js";
+import { useTranslation } from "react-i18next";
+import { useActivePlayer, useGameActions } from "../../store/selectors";
+import useStore from "../../store/useStore";
 
 export default function SettingsPage() {
-    const {t, i18n} = useTranslation();
+    const { t, i18n } = useTranslation();
 
-    const activePlayerId = usePlayerStore(state => state.activePlayerId);
-    const userSettings = usePlayerStore((state) =>
-        activePlayerId ? state.settings[activePlayerId] : {}
-    );
+    const player = useActivePlayer();
+    const { updateSettings } = useGameActions();
 
-    const playerCount = usePlayerStore((state) => Object.keys(state.players).length);
-    const updatePlayerSettings = usePlayerStore((state) => state.updatePlayerSettings);
+    const playerCount = useStore((state) => Object.keys(state.players).length);
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
 
-    if (!activePlayerId) {
+    if (!player) {
         return <div className={styles.container}><h3>{t("selectPlayerFirst")}</h3></div>;
     }
 
@@ -28,10 +26,10 @@ export default function SettingsPage() {
             <Formik
                 enableReinitialize={true}
                 initialValues={{
-                    deckNumber: userSettings?.deckNumber || 1,
-                    name: userSettings?.name || `Player ${playerCount + 1}`,
+                    deckNumber: player.settings.deckNumber || 1,
+                    name: player.settings.name || `Player ${playerCount}`,
                     language: i18n.language || 'en',
-                    autoActions: userSettings?.autoActions || false
+                    autoActions: player.settings.autoActions || false
                 }}
                 onSubmit={(values) => {
                     const newPlayerSettings = {
@@ -39,7 +37,9 @@ export default function SettingsPage() {
                         name: values.name,
                         autoActions: values.autoActions,
                     };
-                    updatePlayerSettings(activePlayerId, newPlayerSettings);
+
+                    updateSettings(player.id, newPlayerSettings);
+
                     changeLanguage(values.language);
                 }}
             >

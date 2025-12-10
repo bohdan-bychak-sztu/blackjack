@@ -1,19 +1,15 @@
 import React, { useEffect } from "react";
 import styles from './GameControls.module.css';
 import { useTranslation } from "react-i18next";
-import usePlayerStore from "../../store/playerStore.js";
-// 1. Імпортуємо стор
+
+import { useActivePlayer } from "../../store/selectors";
 
 export default function GameControls({ onHit, onStand, disabled }) {
     const { t } = useTranslation();
 
-    const autoActions = usePlayerStore((state) => {
-        const activeId = state.activePlayerId;
-        if (activeId && state.settings[activeId]) {
-            return state.settings[activeId].autoActions;
-        }
-        return false; // За замовчуванням
-    });
+    const player = useActivePlayer();
+
+    const autoActions = player?.settings?.autoActions || false;
 
     useEffect(() => {
         if (autoActions && !disabled) {

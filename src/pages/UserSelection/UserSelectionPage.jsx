@@ -1,29 +1,28 @@
-import React from "react";
+import React, { useMemo } from "react";
 import styles from './Userselectionpage.module.css';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
-import usePlayerStore from "../../store/playerStore.js";
+
+import { usePlayersData, useGameActions } from "../../store/selectors";
+import useStore from "../../store/useStore";
 
 export default function UserSelectionPage() {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
-    const playersMap = usePlayerStore((state) => state.players);
-    const settingsMap = usePlayerStore((state) => state.settings);
-    const activePlayerId = usePlayerStore((state) => state.activePlayerId);
+    const { players, settings } = usePlayersData();
+    const { addPlayer, removePlayer, setActivePlayer } = useGameActions();
+    const activePlayerId = useStore((state) => state.activePlayerId);
 
-    const addPlayer = usePlayerStore((state) => state.addPlayer);
-    const removePlayer = usePlayerStore((state) => state.removePlayer);
-    const setActivePlayer = usePlayerStore((state) => state.setActivePlayer);
-
-    const playersList = Object.values(playersMap).map((player) => ({
-        ...player,
-        name: settingsMap[player.id]?.name || 'Unknown', // Дістаємо ім'я з settings
-    }));
+    const playersList = useMemo(() => {
+        return Object.values(players).map((player) => ({
+            ...player,
+            name: settings[player.id]?.name || 'Unknown',
+        }));
+    }, [players, settings]);
 
     const onAddUser = () => {
-        const newName = `Player ${Object.keys(playersMap).length + 1}`;
-
+        const newName = `Player ${playersList.length + 1}`;
         const newPlayer = {
             id: Date.now(),
             balance: 1000,
@@ -33,11 +32,7 @@ export default function UserSelectionPage() {
                 autoActions: false
             },
             stats: {
-                gamesPlayed: 0,
-                gamesWon: 0,
-                gamesLost: 0,
-                gamesPushed: 0,
-                blackjacks: 0
+                gamesPlayed: 0, gamesWon: 0, gamesLost: 0, gamesPushed: 0, blackjacks: 0
             }
         };
         addPlayer(newPlayer);
@@ -83,7 +78,6 @@ export default function UserSelectionPage() {
                     </div>
                 ))}
             </div>
-
             <button onClick={onAddUser}>{t("addUser")}</button>
         </div>
     );

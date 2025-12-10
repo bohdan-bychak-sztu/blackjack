@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import usePlayerStore from "../store/playerStore.js";
+import useStore from "../store/useStore";
 
 export default function useAutoLogin() {
-    const activePlayerId = usePlayerStore((state) => state.activePlayerId);
-    const players = usePlayerStore((state) => state.players);
-    const setActivePlayer = usePlayerStore((state) => state.setActivePlayer);
-    const addPlayer = usePlayerStore((state) => state.addPlayer);
+    const activePlayerId = useStore((state) => state.activePlayerId);
+    const players = useStore((state) => state.players);
+    const setActivePlayer = useStore((state) => state.setActivePlayer);
+    const addPlayer = useStore((state) => state.addPlayer);
 
     useEffect(() => {
         if (activePlayerId) return;
+
         const playerIds = Object.keys(players);
 
         if (playerIds.length > 0) {
@@ -23,5 +24,5 @@ export default function useAutoLogin() {
             });
             setActivePlayer(newId);
         }
-    }, []);
+    }, [activePlayerId, players, setActivePlayer, addPlayer]);
 }
