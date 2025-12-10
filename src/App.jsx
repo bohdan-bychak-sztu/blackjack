@@ -5,8 +5,9 @@ import Layout from "./pages/Layout/Layout.jsx";
 import StartPage from "./pages/StartPage/StartPage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
 import PlayerStatsPage from "./pages/PlayerStatsPage/PlayerStatsPage.jsx";
+import useAutoLogin from "./hooks/useAutoLogin.js";
 function App() {
-
+    useAutoLogin();
 
     return (
             <HashRouter>
