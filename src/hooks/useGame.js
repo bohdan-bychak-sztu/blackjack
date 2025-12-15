@@ -9,12 +9,30 @@ export default function useGame(initialState, deckCount = 1) {
 
     const dealInitialCards = (playerHand, dealerHand) => {
         if (deck.length < 4) return;
+
         let currentDeck = [...deck];
         const playerCards = [currentDeck.shift(), currentDeck.shift()];
         const dealerCards = [currentDeck.shift(), currentDeck.shift()];
+
         setDeck(currentDeck);
         playerHand.setHand(playerCards);
         dealerHand.setHand(dealerCards);
+
+        const playerPoints = calculatePoints(playerCards);
+        const dealerPoints = calculatePoints(dealerCards);
+
+        if (playerPoints === 21) {
+            setReveal(true);
+            if (dealerPoints === 21) {
+                setResult("push");
+            } else {
+                setResult("blackjack");
+            }
+        }
+        else if (dealerPoints === 21) {
+            setReveal(true);
+            setResult("lose");
+        }
     };
 
     const hit = (playerHand) => {
@@ -34,7 +52,7 @@ export default function useGame(initialState, deckCount = 1) {
     const stand = (playerHand, dealerHand) => {
         let currentDeck = [...deck];
         let currentDealerCards = [...dealerHand.hand];
-        let dealerPoints = calculatePoints(currentDealerCards); // Важливо рахувати відразу
+        let dealerPoints = calculatePoints(currentDealerCards);
 
         setReveal(true);
 
@@ -47,7 +65,7 @@ export default function useGame(initialState, deckCount = 1) {
         dealerHand.setHand(currentDealerCards);
         setDeck(currentDeck);
 
-        const playerPoints = calculatePoints(playerHand.hand); // Рахуємо точно
+        const playerPoints = calculatePoints(playerHand.hand);
 
         if (dealerPoints > 21 || playerPoints > dealerPoints) {
             setResult("win");

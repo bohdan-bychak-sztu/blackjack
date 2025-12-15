@@ -45,7 +45,9 @@ const resources = {
             "playAgain": "Play Again",
             "bet": "Bet",
             "chipsControlHint": "Left click to Add • Right click to Remove",
-
+            "nameTooShort": "Name must be at least 2 chars",
+            "nameTooLong": "Name must be 15 chars or less",
+            "required": "Required",
         }
     },
     uk: {
@@ -90,6 +92,9 @@ const resources = {
             "playAgain": "Зіграти ще раз",
             "bet": "Ставка",
             "chipsControlHint": "Лівий клік — Додати • Правий клік — Видалити",
+            "nameTooShort": "Ім'я повинно містити не менше 2 символів",
+            "nameTooLong": "Ім'я повинно містити не більше 15 символів",
+            "required": "Обов'язкове поле",
 
         }
     },
@@ -135,6 +140,9 @@ const resources = {
             "playAgain": "Jugar de Nuevo",
             "bet": "Apostar",
             "chipsControlHint": "Clic izquierdo para Añadir • Clic derecho para Eliminar",
+            "nameTooShort": "El nombre debe tener al menos 2 caracteres",
+            "nameTooLong": "El nombre debe tener 15 caracteres o menos",
+            "required": "Obligatorio",
 
         }
     },
@@ -180,6 +188,9 @@ const resources = {
             "playAgain": "再玩一次",
             "bet": "下注",
             "chipsControlHint": "左键点击添加 • 右键点击移除",
+            "nameTooShort": "名称长度不得少于 2 个字符",
+            "nameTooLong": "名称长度不得超过 15 个字符",
+            "required": "必填",
 
         }
     }

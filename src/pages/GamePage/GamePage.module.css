@@ -6,3 +6,10 @@
     transform: scale(1.1);
     opacity: 0.3;
 }
+
+.errorText {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}

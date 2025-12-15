@@ -16,6 +16,8 @@ import blackjackSoundFile from "../../assets/sounds/blackjack.mp3";
 import useSound from "../../hooks/useSound.js";
 import { useTranslation } from "react-i18next";
 import { useActivePlayer, useGameActions } from "../../store/selectors";
+import { useWindowSize } from 'react-use'
+import {createPortal} from "react-dom";
 
 function GamePage() {
     const { t } = useTranslation();
@@ -31,6 +33,7 @@ function GamePage() {
     const [showModal, setShowModal] = useState(false);
     const [currentBet, setCurrentBet] = useState(0);
     const [isBetPlaced, setIsBetPlaced] = useState(false);
+    const { width, height } = useWindowSize()
 
     const winSound = useSound(winSoundFile);
     const loseSound = useSound(loseSoundFile);
@@ -59,7 +62,7 @@ function GamePage() {
         stand(playerHand, dealerHand);
     };
 
-    const visualBalance = actualBalance - currentBet;
+    const visualBalance = isBetPlaced ? actualBalance : actualBalance - currentBet;
 
     const handleBet = (amount) => {
         if (amount > 0) {
@@ -97,6 +100,7 @@ function GamePage() {
     }, [numberOfDecks, setDeck]);
 
     useEffect(() => {
+        console.log(result);
         if (result) {
             const winnings = calculateWinnings(currentBet, result);
 
@@ -135,7 +139,17 @@ function GamePage() {
 
     return (
         <div className={`${styles.gamePage} ${isAnimating ? styles.animateEnd : ''}`}>
-            {(result === "win" || result === "blackjack") && <Confetti />}
+            {(result === "win" || result === "blackjack") &&
+                createPortal(
+                    <Confetti
+                        numberOfPieces={500}
+                        width={width}
+                        height={height}
+                        style={{ position: 'fixed', top: 0, left: 0, zIndex: 9999 }}
+                    />,
+                    document.body
+                )
+            }
 
             <div>{t("currentPlayer")}: {playerName}</div>
             <div>{deck.length} {t("cardsLeft")}</div>

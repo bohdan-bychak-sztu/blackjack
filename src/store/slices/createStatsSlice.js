@@ -1,5 +1,5 @@
 export const createStatsSlice = (set, get) => ({
-    statistics: {}, // Початковий стан
+    statistics: {},
 
     registerGameResult: (playerId, result) => set((state) => {
         const currentStats = state.statistics[playerId] || {
