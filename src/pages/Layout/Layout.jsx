@@ -27,7 +27,7 @@ export default function Layout() {
                         src={`${import.meta.env.BASE_URL}icons/settings_icon.png`} alt="user selecting" loading="lazy"/>
                     </span>
                 </span>
-                <span>🃏 Blackjack</span>
+                {/*<span>🃏 Blackjack</span>*/}
                 <span>
                     <span className={styles.button}>
                         <MusicToggleButton backgroundMusic={backgroundMusic}/>

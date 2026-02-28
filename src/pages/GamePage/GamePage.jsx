@@ -151,8 +151,10 @@ function GamePage() {
                 )
             }
 
+{/*
             <div>{t("currentPlayer")}: {playerName}</div>
             <div>{deck.length} {t("cardsLeft")}</div>
+*/}
 
             <PlayerHand name="Dealer" cards={dealerHand.hand} reveal={reveal} isDealer={true} />
             <PlayerHand name="Player" cards={playerHand.hand} />
@@ -162,6 +164,9 @@ function GamePage() {
                 currentBet={currentBet}
                 onBet={handleBet}
                 isBetPlaced={isBetPlaced}
+
+                updeteBalance={updateBalance}
+                confirmBet={confirmBet}
             />
 
             {!isBetPlaced && (

@@ -33,6 +33,7 @@ export default function SettingsPage() {
 
     const validationSchema = Yup.object({
         name: Yup.string()
+            .trim()
             .min(2, t("nameTooShort"))
             .max(15, t("nameTooLong"))
             .required(t("required") || "Required"),

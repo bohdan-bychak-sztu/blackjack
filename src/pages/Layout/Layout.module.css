@@ -5,6 +5,15 @@
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .app-container {
+        border-radius: 0;
+        height: 100dvh;
+        width: 100vw;
+    }
 }
 
 .header,
