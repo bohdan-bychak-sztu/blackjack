@@ -1,3 +1,8 @@
+/**
+ * Shuffles an array in place.
+ * @param {Array<any>} array The array to shuffle.
+ * @returns {Array<any>} The shuffled array.
+ */
 export function shuffle(array) {
     let i = array.length, j, temp;
     while (--i > 0) {
@@ -9,6 +14,11 @@ export function shuffle(array) {
     return array;
 }
 
+/**
+ * Calculates the total points of a hand of cards.
+ * @param {Array<Card>} cards The array of cards in the hand.
+ * @returns {number} The total points of the hand.
+ */
 export function calculatePoints(cards) {
     let points = cards.reduce((total, card) => {
         let value = 0;
@@ -34,6 +44,12 @@ export function calculatePoints(cards) {
 
 export const CHIPS_VALUES = [1, 5, 25, 100, 500];
 
+/**
+ * Calculates the winnings based on the bet and the result of the game.
+ * @param {number} bet The amount of the bet.
+ * @param {'win' | 'blackjack' | 'push' | 'lose'} result The result of the game.
+ * @returns {number} The amount of winnings.
+ */
 export const calculateWinnings = (bet, result) => {
     if (result === 'win') return bet * 2;
     // Math.floor тут гарна ідея, щоб уникнути дробів

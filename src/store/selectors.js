@@ -4,6 +4,10 @@ import useStore from './useStore';
 const DEFAULT_SETTINGS = { name: 'Unknown', deckNumber: 1, autoActions: false };
 const DEFAULT_STATS = { gamesPlayed: 0, gamesWon: 0, gamesLost: 0, gamesPushed: 0, blackjacks: 0 };
 
+/**
+ * A hook that returns the active player's data.
+ * @returns {object | null} The active player's data, or null if there is no active player.
+ */
 export const useActivePlayer = () => {
     return useStore(
         useShallow((state) => {
@@ -25,6 +29,10 @@ export const useActivePlayer = () => {
     );
 };
 
+/**
+ * A hook that returns a set of game actions.
+ * @returns {{addPlayer: Function, removePlayer: Function, setActivePlayer: Function, updatePlayerBalance: Function, updatePlayerSettings: Function, registerGameResult: Function}} An object containing game action functions.
+ */
 export const useGameActions = () => {
     return useStore(
         useShallow((state) => ({
@@ -38,6 +46,10 @@ export const useGameActions = () => {
     );
 };
 
+/**
+ * A hook that returns all players' data.
+ * @returns {{players: object, settings: object, statistics: object}} An object containing all players, settings, and statistics.
+ */
 export const usePlayersData = () => {
     return useStore(
         useShallow((state) => ({

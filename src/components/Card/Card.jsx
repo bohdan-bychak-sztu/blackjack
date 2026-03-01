@@ -9,6 +9,16 @@ const getCardImage = (value, suit, hidden) => {
     return `${baseUrl}cards/${value}${suit}.png`;
 };
 
+
+/**
+ * Компонент гральної карти.
+ * * @component
+ * @param {Object} props - Властивості компонента.
+ * @param {string} props.value - Номінал (2-10, J, Q, K, A).
+ * @param {string} props.suit - Масть (H, D, C, S).
+ * @param {boolean} [props.hidden=true] - Чи прихована карта.
+ * @param {Object} [props.style] - Додаткові CSS стилі.
+ */
 function Card({ value, suit, hidden = false, width = 100, style = {} }) {
     const cardStyle = {
         width: `${width}px`,

@@ -5,6 +5,10 @@ import { useTranslation } from "react-i18next";
 
 import usePlayerStore from "../../store/useStore";
 
+/**
+ * A page that displays the statistics of a player.
+ * @returns {JSX.Element} The rendered player statistics page.
+ */
 export default function PlayerStatsPage() {
     const { id } = useParams();
     const navigate = useNavigate();

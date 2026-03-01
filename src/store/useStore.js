@@ -6,6 +6,14 @@ import {createStatsSlice} from "./slices/createStatsSlice.js";
 import {createGDPRSlice} from "./slices/createGDPRSlice.js";
 
 
+/**
+ * The main Zustand store for the application.
+ * It combines multiple slices into a single store.
+ * @param {Function} set - The Zustand set function.
+ * @param {Function} get - The Zustand get function.
+ * @param {object} store - The Zustand store object.
+ * @returns {object} The combined store object.
+ */
 const useStore = create(
     persist(
         (...a) => ({

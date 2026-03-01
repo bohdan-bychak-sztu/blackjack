@@ -14,7 +14,7 @@
     "deploy": "gh-pages -d dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-  },
+    "docs:jsdoc": "jsdoc -c jsdoc.json"  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.2",
     "formik": "^2.4.6",
@@ -45,6 +45,7 @@
     "@vitejs/plugin-react": "^5.0.4",
     "@vitest/browser-playwright": "^4.0.18",
     "@vitest/coverage-v8": "^4.0.18",
+    "docdash": "^2.0.2",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",

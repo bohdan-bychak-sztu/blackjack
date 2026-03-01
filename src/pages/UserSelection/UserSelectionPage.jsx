@@ -6,6 +6,10 @@ import { useNavigate } from "react-router";
 import { usePlayersData, useGameActions } from "../../store/selectors";
 import useStore from "../../store/useStore";
 
+/**
+ * A page that allows the user to select, add, or remove players.
+ * @returns {JSX.Element} The rendered user selection page.
+ */
 export default function UserSelectionPage() {
     const { t } = useTranslation();
     const navigate = useNavigate();
@@ -21,6 +25,9 @@ export default function UserSelectionPage() {
         }));
     }, [players, settings]);
 
+    /**
+     * Adds a new player to the game.
+     */
     const onAddUser = () => {
         const newName = `Player ${playersList.length + 1}`;
         const newPlayer = {
@@ -38,10 +45,19 @@ export default function UserSelectionPage() {
         addPlayer(newPlayer);
     };
 
+    /**
+     * Sets the active player.
+     * @param {number} userId The ID of the player to set as active.
+     */
     const onSelectUser = (userId) => {
         setActivePlayer(userId);
     };
 
+    /**
+     * Navigates to the player statistics page.
+     * @param {React.MouseEvent} e The click event.
+     * @param {number} userId The ID of the player whose stats to view.
+     */
     const onViewStats = (e, userId) => {
         e.stopPropagation();
         navigate(`/player/${userId}`);

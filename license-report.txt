@@ -1,3 +1,10 @@
+├─ @adobe/css-tools@4.4.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/adobe/css-tools
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@adobe\css-tools
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@adobe\css-tools\LICENSE
 ├─ @babel/code-frame@7.27.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/babel/babel
@@ -89,7 +96,7 @@
 │  ├─ url: https://babel.dev/team
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\helpers
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\helpers\LICENSE
-├─ @babel/parser@7.28.5
+├─ @babel/parser@7.29.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/babel/babel
 │  ├─ publisher: The Babel Team
@@ -131,19 +138,34 @@
 │  ├─ url: https://babel.dev/team
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\traverse
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\traverse\LICENSE
-├─ @babel/types@7.28.5
+├─ @babel/types@7.29.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/babel/babel
 │  ├─ publisher: The Babel Team
 │  ├─ url: https://babel.dev/team
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\types
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@babel\types\LICENSE
+├─ @bcoe/v8-coverage@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bcoe/v8-coverage
+│  ├─ publisher: Charles Samborski
+│  ├─ email: demurgos@demurgos.net
+│  ├─ url: https://demurgos.net
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@bcoe\v8-coverage
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@bcoe\v8-coverage\LICENSE.md
+├─ @chromatic-com/storybook@5.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chromaui/addon-visual-tests
+│  ├─ publisher: Chromatic
+│  ├─ email: support@chromatic.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@chromatic-com\storybook
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@chromatic-com\storybook\LICENSE
 ├─ @esbuild/win32-x64@0.25.11
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/evanw/esbuild
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@esbuild\win32-x64
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@esbuild\win32-x64\README.md
-├─ @eslint-community/eslint-utils@4.9.0
+├─ @eslint-community/eslint-utils@4.9.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/eslint-community/eslint-utils
 │  ├─ publisher: Toru Nagashima
@@ -219,6 +241,11 @@
 │  ├─ publisher: Nicholas C. Zaks
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@humanwhocodes\retry
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@humanwhocodes\retry\LICENSE
+├─ @joshwooding/vite-plugin-react-docgen-typescript@0.6.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/joshwooding/vite-plugin-react-docgen-typescript
+│  ├─ publisher: Josh Wooding
+│  └─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@joshwooding\vite-plugin-react-docgen-typescript
 ├─ @jridgewell/gen-mapping@0.3.13
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jridgewell/sourcemaps
@@ -254,6 +281,27 @@
 │  ├─ email: justin@ridgewell.name
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@jridgewell\trace-mapping
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@jridgewell\trace-mapping\LICENSE
+├─ @jsdoc/salty@0.2.10
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/jsdoc/jsdoc
+│  ├─ publisher: Jeff Williams
+│  ├─ email: jeffrey.l.williams@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@jsdoc\salty
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@jsdoc\salty\LICENSE
+├─ @mdx-js/react@3.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mdx-js/mdx
+│  ├─ publisher: John Otander
+│  ├─ email: johnotander@gmail.com
+│  ├─ url: https://johno.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@mdx-js\react
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@mdx-js\react\license
+├─ @neoconfetti/react@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/puruvj/neoconfetti
+│  ├─ publisher: Puru Vijay
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@neoconfetti\react
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@neoconfetti\react\README.md
 ├─ @nodelib/fs.scandir@2.1.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir
@@ -269,6 +317,14 @@
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@nodelib\fs.walk
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@nodelib\fs.walk\LICENSE
+├─ @polka/url@1.0.0-next.29
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/polka
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke@lukeed.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@polka\url
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@polka\url\readme.md
 ├─ @reduxjs/toolkit@2.9.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/reduxjs/redux-toolkit
@@ -281,13 +337,20 @@
 │  ├─ repository: https://github.com/rolldown/rolldown
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@rolldown\pluginutils
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@rolldown\pluginutils\LICENSE
-├─ @rollup/rollup-win32-x64-gnu@4.52.5
+├─ @rollup/pluginutils@5.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rollup/plugins
+│  ├─ publisher: Rich Harris
+│  ├─ email: richard.a.harris@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@rollup\pluginutils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@rollup\pluginutils\LICENSE
+├─ @rollup/rollup-win32-x64-gnu@4.59.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/rollup/rollup
 │  ├─ publisher: Lukas Taegert-Atkinson
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@rollup\rollup-win32-x64-gnu
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@rollup\rollup-win32-x64-gnu\README.md
-├─ @rollup/rollup-win32-x64-msvc@4.52.5
+├─ @rollup/rollup-win32-x64-msvc@4.59.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/rollup/rollup
 │  ├─ publisher: Lukas Taegert-Atkinson
@@ -305,6 +368,94 @@
 │  ├─ publisher: Fabian Hiller
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@standard-schema\utils
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@standard-schema\utils\LICENSE
+├─ @storybook/addon-a11y@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-a11y
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-a11y\README.md
+├─ @storybook/addon-docs@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-docs
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-docs\README.md
+├─ @storybook/addon-onboarding@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-onboarding
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-onboarding\README.md
+├─ @storybook/addon-vitest@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-vitest
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\addon-vitest\README.md
+├─ @storybook/builder-vite@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ publisher: Eirik Sletteberg
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\builder-vite
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\builder-vite\README.md
+├─ @storybook/csf-plugin@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\csf-plugin
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\csf-plugin\README.md
+├─ @storybook/global@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/global
+│  ├─ publisher: Norbert
+│  ├─ email: ndelangen@me.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\global
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\global\LICENSE
+├─ @storybook/icons@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/icons
+│  ├─ publisher: cdedreuille
+│  ├─ email: charles@chromatic.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\icons
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\icons\LICENSE.md
+├─ @storybook/react-dom-shim@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react-dom-shim
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react-dom-shim\README.md
+├─ @storybook/react-vite@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react-vite
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react-vite\README.md
+├─ @storybook/react@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@storybook\react\README.md
+├─ @testing-library/dom@10.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/testing-library/dom-testing-library
+│  ├─ publisher: Kent C. Dodds
+│  ├─ email: me@kentcdodds.com
+│  ├─ url: https://kentcdodds.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\dom
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\dom\LICENSE
+├─ @testing-library/jest-dom@6.9.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/testing-library/jest-dom
+│  ├─ publisher: Ernesto Garcia
+│  ├─ email: gnapse@gmail.com
+│  ├─ url: http://gnapse.github.io
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\jest-dom
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\jest-dom\LICENSE
+├─ @testing-library/user-event@14.6.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/testing-library/user-event
+│  ├─ publisher: Giorgio Polvara
+│  ├─ email: polvara@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\user-event
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\user-event\LICENSE
+├─ @types/aria-query@5.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\aria-query
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\aria-query\LICENSE
 ├─ @types/babel__core@7.20.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -325,6 +476,21 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\babel__traverse
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\babel__traverse\LICENSE
+├─ @types/chai@5.2.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\chai
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\chai\LICENSE
+├─ @types/deep-eql@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\deep-eql
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\deep-eql\LICENSE
+├─ @types/doctrine@0.0.9
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\doctrine
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\doctrine\LICENSE
 ├─ @types/estree@1.0.8
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -345,6 +511,26 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\json-schema
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\json-schema\LICENSE
+├─ @types/linkify-it@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\linkify-it
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\linkify-it\LICENSE
+├─ @types/markdown-it@14.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\markdown-it
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\markdown-it\LICENSE
+├─ @types/mdurl@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\mdurl
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\mdurl\LICENSE
+├─ @types/mdx@2.0.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\mdx
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\mdx\LICENSE
 ├─ @types/react-dom@19.2.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -355,17 +541,129 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\react
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\react\LICENSE
+├─ @types/resolve@1.20.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\resolve
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\resolve\LICENSE
 ├─ @types/use-sync-external-store@0.0.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\use-sync-external-store
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@types\use-sync-external-store\LICENSE
+├─ @typescript-eslint/project-service@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\project-service
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\project-service\LICENSE
+├─ @typescript-eslint/scope-manager@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\scope-manager
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\scope-manager\LICENSE
+├─ @typescript-eslint/tsconfig-utils@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\tsconfig-utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\tsconfig-utils\LICENSE
+├─ @typescript-eslint/types@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\types
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\types\LICENSE
+├─ @typescript-eslint/typescript-estree@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\typescript-estree
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\typescript-estree\LICENSE
+├─ @typescript-eslint/utils@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\utils\LICENSE
+├─ @typescript-eslint/visitor-keys@8.56.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/typescript-eslint/typescript-eslint
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\visitor-keys
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\visitor-keys\LICENSE
 ├─ @vitejs/plugin-react@5.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/vitejs/vite-plugin-react
 │  ├─ publisher: Evan You
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitejs\plugin-react
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitejs\plugin-react\LICENSE
+├─ @vitest/browser-playwright@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\browser-playwright
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\browser-playwright\LICENSE
+├─ @vitest/browser@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\browser
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\browser\LICENSE
+├─ @vitest/coverage-v8@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\coverage-v8
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\coverage-v8\LICENSE
+├─ @vitest/expect@3.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\LICENSE
+├─ @vitest/expect@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest\node_modules\@vitest\expect
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest\node_modules\@vitest\expect\LICENSE
+├─ @vitest/mocker@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\mocker
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\mocker\LICENSE
+├─ @vitest/pretty-format@3.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\pretty-format
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\pretty-format\LICENSE
+├─ @vitest/pretty-format@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\pretty-format
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\pretty-format\LICENSE
+├─ @vitest/runner@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\runner
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\runner\LICENSE
+├─ @vitest/snapshot@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\snapshot
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\snapshot\LICENSE
+├─ @vitest/spy@3.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\spy
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\spy\LICENSE
+├─ @vitest/spy@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\spy
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\spy\LICENSE
+├─ @vitest/utils@3.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\@vitest\utils\LICENSE
+├─ @vitest/utils@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\utils\LICENSE
 ├─ @xobotyi/scrollbar-width@1.9.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/xobotyi/scrollbar-width
@@ -384,12 +682,28 @@
 │  ├─ repository: https://github.com/acornjs/acorn
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\acorn
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\acorn\LICENSE
-├─ ajv@6.12.6
+├─ ajv@6.14.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/ajv-validator/ajv
 │  ├─ publisher: Evgeny Poberezkin
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ajv
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ajv\LICENSE
+├─ ansi-regex@5.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-regex
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ansi-regex
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ansi-regex\license
+├─ ansi-regex@6.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-regex
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-ansi\node_modules\ansi-regex
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-ansi\node_modules\ansi-regex\license
 ├─ ansi-styles@4.3.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/ansi-styles
@@ -398,11 +712,26 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ansi-styles
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ansi-styles\license
+├─ ansi-styles@5.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-styles
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format\node_modules\ansi-styles
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format\node_modules\ansi-styles\license
 ├─ argparse@2.0.1
 │  ├─ licenses: Python-2.0
 │  ├─ repository: https://github.com/nodeca/argparse
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\argparse
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\argparse\LICENSE
+├─ aria-query@5.3.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/A11yance/aria-query
+│  ├─ publisher: Jesse Beach
+│  ├─ email: splendidnoise@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\aria-query
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\aria-query\LICENSE
 ├─ array-union@2.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/array-union
@@ -411,12 +740,39 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\array-union
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\array-union\license
+├─ assertion-error@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/assertion-error
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@qualiancy.com
+│  ├─ url: http://qualiancy.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\assertion-error
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\assertion-error\LICENSE
+├─ ast-types@0.16.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/benjamn/ast-types
+│  ├─ publisher: Ben Newman
+│  ├─ email: bn@cs.stanford.edu
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-types
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-types\LICENSE
+├─ ast-v8-to-istanbul@0.3.12
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/AriPerkkio/ast-v8-to-istanbul
+│  ├─ publisher: Ari Perkkiö
+│  ├─ email: ari.perkkio@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul\LICENSE
 ├─ async@3.2.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/caolan/async
 │  ├─ publisher: Caolan McMahon
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\async
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\async\LICENSE
+├─ axe-core@4.11.1
+│  ├─ licenses: MPL-2.0
+│  ├─ repository: https://github.com/dequelabs/axe-core
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\axe-core
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\axe-core\LICENSE
 ├─ balanced-match@1.0.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/juliangruber/balanced-match
@@ -425,6 +781,11 @@
 │  ├─ url: http://juliangruber.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\balanced-match
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\balanced-match\LICENSE.md
+├─ balanced-match@4.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/balanced-match
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\balanced-match
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\balanced-match\LICENSE.md
 ├─ baseline-browser-mapping@2.8.20
 │  ├─ licenses: Apache-2.0
 │  ├─ repository: https://github.com/web-platform-dx/baseline-browser-mapping
@@ -435,6 +796,14 @@
 │  ├─ private: true
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\LICENSE
+├─ bluebird@3.7.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/petkaantonov/bluebird
+│  ├─ publisher: Petka Antonov
+│  ├─ email: petka_antonov@hotmail.com
+│  ├─ url: http://github.com/petkaantonov/
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\bluebird
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\bluebird\LICENSE
 ├─ brace-expansion@1.1.12
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/juliangruber/brace-expansion
@@ -443,6 +812,11 @@
 │  ├─ url: http://juliangruber.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\brace-expansion
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\brace-expansion\LICENSE
+├─ brace-expansion@5.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/brace-expansion
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\brace-expansion
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\brace-expansion\LICENSE
 ├─ braces@3.0.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/braces
@@ -457,6 +831,14 @@
 │  ├─ email: andrey@sitnik.ru
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\browserslist
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\browserslist\LICENSE
+├─ bundle-name@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/bundle-name
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\bundle-name
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\bundle-name\license
 ├─ callsites@3.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/callsites
@@ -473,11 +855,47 @@
 │  ├─ url: http://beneb.info
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\caniuse-lite
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\caniuse-lite\LICENSE
+├─ catharsis@0.9.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/hegemonic/catharsis
+│  ├─ publisher: Jeff Williams
+│  ├─ email: jeffrey.l.williams@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\catharsis
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\catharsis\LICENSE
+├─ chai@5.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/chai
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\chai
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\chai\LICENSE
+├─ chai@6.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/chai
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest\node_modules\chai
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest\node_modules\chai\LICENSE
 ├─ chalk@4.1.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/chalk
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\chalk
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\chalk\license
+├─ check-error@2.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/check-error
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ url: http://alogicalparadox.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\check-error
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\check-error\LICENSE
+├─ chromatic@13.3.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chromaui/chromatic-cli
+│  ├─ publisher: Chromatic
+│  ├─ email: support@chromatic.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\chromatic
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\chromatic\LICENSE
 ├─ color-convert@2.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/Qix-/color-convert
@@ -559,6 +977,13 @@
 │  ├─ url: https://github.com/lahmatiy
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\css-tree
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\css-tree\LICENSE
+├─ css.escape@1.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mathiasbynens/CSS.escape
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\css.escape
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\css.escape\LICENSE-MIT.txt
 ├─ csstype@3.1.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/frenic/csstype
@@ -573,6 +998,13 @@
 │  ├─ url: https://github.com/qix-
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\debug
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\debug\LICENSE
+├─ deep-eql@5.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/deep-eql
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\deep-eql
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\deep-eql\LICENSE
 ├─ deep-is@0.1.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/thlorenz/deep-is
@@ -587,6 +1019,38 @@
 │  ├─ publisher: Nick Fisher
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\deepmerge
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\deepmerge\license.txt
+├─ default-browser-id@5.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/default-browser-id
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\default-browser-id
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\default-browser-id\license
+├─ default-browser@5.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/default-browser
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\default-browser
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\default-browser\license
+├─ define-lazy-prop@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/define-lazy-prop
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\define-lazy-prop
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\define-lazy-prop\license
+├─ dequal@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/dequal
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\dequal
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\dequal\license
 ├─ dir-glob@3.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/kevva/dir-glob
@@ -595,6 +1059,28 @@
 │  ├─ url: github.com/kevva
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\dir-glob
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\dir-glob\license
+├─ docdash@2.0.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/clenemt/docdash
+│  ├─ publisher: Clement Moron
+│  ├─ email: clement.moron@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\docdash
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\docdash\LICENSE.md
+├─ doctrine@3.0.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/eslint/doctrine
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\doctrine
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\doctrine\LICENSE
+├─ dom-accessibility-api@0.5.16
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/eps1lon/dom-accessibility-api
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\dom-accessibility-api
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\dom-accessibility-api\LICENSE.md
+├─ dom-accessibility-api@0.6.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/eps1lon/dom-accessibility-api
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\jest-dom\node_modules\dom-accessibility-api
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@testing-library\jest-dom\node_modules\dom-accessibility-api\LICENSE.md
 ├─ electron-to-chromium@1.5.241
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/kilian/electron-to-chromium
@@ -608,11 +1094,32 @@
 │  ├─ email: johnrbowman@fastmail.fm
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\email-addresses
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\email-addresses\LICENSE
+├─ empathic@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/empathic
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\empathic
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\empathic\license
+├─ entities@4.5.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/entities
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\entities
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\entities\LICENSE
 ├─ error-stack-parser@2.1.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/stacktracejs/error-stack-parser
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\error-stack-parser
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\error-stack-parser\LICENSE
+├─ es-module-lexer@1.7.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/guybedford/es-module-lexer
+│  ├─ publisher: Guy Bedford
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\es-module-lexer
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\es-module-lexer\LICENSE
 ├─ esbuild@0.25.11
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/evanw/esbuild
@@ -634,6 +1141,14 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-outer\node_modules\escape-string-regexp
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-outer\node_modules\escape-string-regexp\license
+├─ escape-string-regexp@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\jsdoc\node_modules\escape-string-regexp
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\jsdoc\node_modules\escape-string-regexp\license
 ├─ escape-string-regexp@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
@@ -654,6 +1169,12 @@
 │  ├─ url: https://github.com/ArnaudBarre
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-plugin-react-refresh
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-plugin-react-refresh\LICENSE
+├─ eslint-plugin-storybook@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ publisher: yannbf@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-plugin-storybook
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-plugin-storybook\LICENSE
 ├─ eslint-scope@8.4.0
 │  ├─ licenses: BSD-2-Clause
 │  ├─ repository: https://github.com/eslint/js
@@ -673,6 +1194,13 @@
 │  ├─ url: https://github.com/mysticatea
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-visitor-keys
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\eslint-visitor-keys\LICENSE
+├─ eslint-visitor-keys@5.0.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/eslint/js
+│  ├─ publisher: Toru Nagashima
+│  ├─ url: https://github.com/mysticatea
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\visitor-keys\node_modules\eslint-visitor-keys
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@typescript-eslint\visitor-keys\node_modules\eslint-visitor-keys\LICENSE
 ├─ eslint@9.38.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/eslint/eslint
@@ -687,6 +1215,13 @@
 │  ├─ email: nicholas+npm@nczconsulting.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\espree
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\espree\LICENSE
+├─ esprima@4.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/jquery/esprima
+│  ├─ publisher: Ariya Hidayat
+│  ├─ email: ariya.hidayat@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\esprima
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\esprima\LICENSE.BSD
 ├─ esquery@1.6.0
 │  ├─ licenses: BSD-3-Clause
 │  ├─ repository: https://github.com/estools/esquery
@@ -704,11 +1239,28 @@
 │  ├─ repository: https://github.com/estools/estraverse
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\estraverse
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\estraverse\LICENSE.BSD
+├─ estree-walker@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Rich-Harris/estree-walker
+│  ├─ publisher: Rich Harris
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\estree-walker
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\estree-walker\LICENSE
+├─ estree-walker@3.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Rich-Harris/estree-walker
+│  ├─ publisher: Rich Harris
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul\node_modules\estree-walker
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul\node_modules\estree-walker\LICENSE
 ├─ esutils@2.0.3
 │  ├─ licenses: BSD-2-Clause
 │  ├─ repository: https://github.com/estools/esutils
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\esutils
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\esutils\LICENSE.BSD
+├─ expect-type@1.3.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mmkal/expect-type
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\expect-type
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\expect-type\LICENSE
 ├─ fast-deep-equal@3.1.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/epoberezkin/fast-deep-equal
@@ -785,6 +1337,13 @@
 │  ├─ url: https://sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\filenamify
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\filenamify\license
+├─ filesize@10.1.6
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/avoidwork/filesize.js
+│  ├─ publisher: Jason Mulligan
+│  ├─ email: jason.mulligan@avoidwork.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\filesize
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\filesize\LICENSE
 ├─ fill-range@7.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jonschlinkert/fill-range
@@ -841,6 +1400,13 @@
 │  ├─ email: jprichardson@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\fs-extra
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\fs-extra\LICENSE
+├─ function-bind@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Raynos/function-bind
+│  ├─ publisher: Raynos
+│  ├─ email: raynos2@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\function-bind
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\function-bind\LICENSE
 ├─ gensync@1.0.0-beta.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/loganfsmyth/gensync
@@ -871,6 +1437,14 @@
 │  ├─ url: https://gulpjs.com/
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\glob-parent
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\glob-parent\LICENSE
+├─ glob@13.0.6
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/node-glob
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: https://blog.izs.me/
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\glob
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\LICENSE.md
 ├─ globals@14.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/globals
@@ -908,6 +1482,13 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\has-flag
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\has-flag\license
+├─ hasown@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/hasOwn
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\hasown
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\hasown\LICENSE
 ├─ hoist-non-react-statics@3.3.2
 │  ├─ licenses: BSD-3-Clause
 │  ├─ repository: https://github.com/mridgway/hoist-non-react-statics
@@ -915,6 +1496,12 @@
 │  ├─ email: mcridgway@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\hoist-non-react-statics
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\hoist-non-react-statics\LICENSE.md
+├─ html-escaper@2.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/WebReflection/html-escaper
+│  ├─ publisher: Andrea Giammarchi
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\html-escaper
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\html-escaper\LICENSE.txt
 ├─ html-parse-stringify@3.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/henrikjoreteg/html-parse-stringify
@@ -974,12 +1561,35 @@
 │  ├─ url: https://github.com/homebrewing
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\imurmurhash
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\imurmurhash\README.md
+├─ indent-string@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/indent-string
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\indent-string
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\indent-string\license
 ├─ inline-style-prefixer@7.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/robinweser/inline-style-prefixer
 │  ├─ publisher: Robin Weser
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\inline-style-prefixer
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\inline-style-prefixer\LICENSE
+├─ is-core-module@2.16.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/is-core-module
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-core-module
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-core-module\LICENSE
+├─ is-docker@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-docker
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-docker
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-docker\license
 ├─ is-extglob@2.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jonschlinkert/is-extglob
@@ -994,6 +1604,14 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-glob
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-glob\LICENSE
+├─ is-inside-container@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-inside-container
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-inside-container
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-inside-container\license
 ├─ is-number@7.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jonschlinkert/is-number
@@ -1001,6 +1619,14 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-number
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-number\LICENSE
+├─ is-wsl@3.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-wsl
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\is-wsl
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\is-wsl\license
 ├─ isexe@2.0.0
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/isexe
@@ -1009,25 +1635,73 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\isexe
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\isexe\LICENSE
+├─ istanbul-lib-coverage@3.2.2
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/istanbuljs/istanbuljs
+│  ├─ publisher: Krishnan Anantheswaran
+│  ├─ email: kananthmail-github@yahoo.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-coverage
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-coverage\LICENSE
+├─ istanbul-lib-report@3.0.1
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/istanbuljs/istanbuljs
+│  ├─ publisher: Krishnan Anantheswaran
+│  ├─ email: kananthmail-github@yahoo.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report\LICENSE
+├─ istanbul-reports@3.2.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/istanbuljs/istanbuljs
+│  ├─ publisher: Krishnan Anantheswaran
+│  ├─ email: kananthmail-github@yahoo.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-reports
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-reports\LICENSE
 ├─ js-cookie@2.2.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/js-cookie/js-cookie
 │  ├─ publisher: Klaus Hartl
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\js-cookie
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\js-cookie\LICENSE
+├─ js-cookie@3.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/js-cookie/js-cookie
+│  ├─ publisher: Klaus Hartl
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-cookie-consent\node_modules\js-cookie
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-cookie-consent\node_modules\js-cookie\LICENSE
+├─ js-tokens@10.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lydell/js-tokens
+│  ├─ publisher: Simon Lydell
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul\node_modules\js-tokens
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ast-v8-to-istanbul\node_modules\js-tokens\LICENSE
 ├─ js-tokens@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/lydell/js-tokens
 │  ├─ publisher: Simon Lydell
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\js-tokens
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\js-tokens\LICENSE
-├─ js-yaml@4.1.0
+├─ js-yaml@4.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
 │  ├─ email: dervus.grim@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\js-yaml
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\js-yaml\LICENSE
+├─ js2xmlparser@4.0.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/michaelkourlas/node-js2xmlparser
+│  ├─ publisher: Michael Kourlas
+│  ├─ email: michael@kourlas.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\js2xmlparser
+│  ├─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\js2xmlparser\LICENSE
+│  └─ noticeFile: D:\University\Semester_5\КОП\bkackjack\node_modules\js2xmlparser\NOTICE
+├─ jsdoc@4.0.5
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/jsdoc/jsdoc
+│  ├─ publisher: Michael Mathews
+│  ├─ email: micmath@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\jsdoc
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\jsdoc\LICENSE.md
 ├─ jsesc@3.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mathiasbynens/jsesc
@@ -1079,6 +1753,12 @@
 │  ├─ url: http://jaredwray.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\keyv
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\keyv\README.md
+├─ klaw@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jprichardson/node-klaw
+│  ├─ publisher: JP Richardson
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\klaw
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\klaw\LICENSE
 ├─ levn@0.4.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/gkz/levn
@@ -1086,6 +1766,11 @@
 │  ├─ email: z@georgezahariev.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\levn
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\levn\LICENSE
+├─ linkify-it@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markdown-it/linkify-it
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\linkify-it
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\linkify-it\LICENSE
 ├─ locate-path@5.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/locate-path
@@ -1102,7 +1787,7 @@
 │  ├─ url: https://sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\locate-path
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\locate-path\license
-├─ lodash-es@4.17.21
+├─ lodash-es@4.17.23
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/lodash/lodash
 │  ├─ publisher: John-David Dalton
@@ -1116,13 +1801,34 @@
 │  ├─ email: john.david.dalton@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\lodash.merge
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\lodash.merge\LICENSE
-├─ lodash@4.17.21
+├─ lodash@4.17.23
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/lodash/lodash
 │  ├─ publisher: John-David Dalton
 │  ├─ email: john.david.dalton@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\lodash
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\lodash\LICENSE
+├─ loose-envify@1.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/zertosh/loose-envify
+│  ├─ publisher: Andres Suarez
+│  ├─ email: zertosh@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\loose-envify
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\loose-envify\LICENSE
+├─ loupe@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/loupe
+│  ├─ publisher: Veselin Todorov
+│  ├─ email: hi@vesln.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\loupe
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\loupe\LICENSE
+├─ lru-cache@11.2.6
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/node-lru-cache
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\path-scurry\node_modules\lru-cache
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\path-scurry\node_modules\lru-cache\LICENSE.md
 ├─ lru-cache@5.1.1
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/node-lru-cache
@@ -1130,6 +1836,24 @@
 │  ├─ email: i@izs.me
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\lru-cache
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\lru-cache\LICENSE
+├─ lz-string@1.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pieroxy/lz-string
+│  ├─ publisher: pieroxy
+│  ├─ email: pieroxy@pieroxy.net
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\lz-string
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\lz-string\LICENSE
+├─ magic-string@0.30.21
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Rich-Harris/magic-string
+│  ├─ publisher: Rich Harris
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\magic-string
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\magic-string\LICENSE
+├─ magicast@0.5.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/magicast
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\magicast
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\magicast\LICENSE
 ├─ make-dir@3.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/make-dir
@@ -1138,12 +1862,41 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\make-dir
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\make-dir\license
+├─ make-dir@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/make-dir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report\node_modules\make-dir
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report\node_modules\make-dir\license
+├─ markdown-it-anchor@8.6.7
+│  ├─ licenses: Unlicense
+│  ├─ repository: https://github.com/valeriangalliat/markdown-it-anchor
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\markdown-it-anchor
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\markdown-it-anchor\README.md
+├─ markdown-it@14.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markdown-it/markdown-it
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\markdown-it
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\markdown-it\LICENSE
+├─ marked@4.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markedjs/marked
+│  ├─ publisher: Christopher Jeffrey
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\marked
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\marked\LICENSE.md
 ├─ mdn-data@2.0.14
 │  ├─ licenses: CC0-1.0
 │  ├─ repository: https://github.com/mdn/data
 │  ├─ publisher: Mozilla Developer Network
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\mdn-data
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\mdn-data\LICENSE
+├─ mdurl@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markdown-it/mdurl
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\mdurl
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\mdurl\LICENSE
 ├─ merge2@1.4.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/teambition/merge2
@@ -1156,7 +1909,23 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\micromatch
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\micromatch\LICENSE
-├─ minimatch@3.1.2
+├─ min-indent@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/thejameskyle/min-indent
+│  ├─ publisher: James Kyle
+│  ├─ email: me@thejameskyle.com
+│  ├─ url: thejameskyle.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\min-indent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\min-indent\license
+├─ minimatch@10.2.4
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/minimatch
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\minimatch
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\glob\node_modules\minimatch\LICENSE.md
+├─ minimatch@3.1.5
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/minimatch
 │  ├─ publisher: Isaac Z. Schlueter
@@ -1164,6 +1933,35 @@
 │  ├─ url: http://blog.izs.me
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\minimatch
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\minimatch\LICENSE
+├─ minimist@1.2.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/minimistjs/minimist
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\minimist
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\minimist\LICENSE
+├─ minipass@7.1.3
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/minipass
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\minipass
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\minipass\LICENSE.md
+├─ mkdirp@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/isaacs/node-mkdirp
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\mkdirp
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\mkdirp\LICENSE
+├─ mrmime@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/mrmime
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\mrmime
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\mrmime\license
 ├─ ms@2.1.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/vercel/ms
@@ -1195,6 +1993,29 @@
 │  ├─ email: chi187@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\node-releases
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\node-releases\LICENSE
+├─ object-assign@4.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/object-assign
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\object-assign
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\object-assign\license
+├─ obug@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sxzz/obug
+│  ├─ publisher: Kevin Deng
+│  ├─ email: sxzz@sxzz.moe
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\obug
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\obug\LICENSE
+├─ open@10.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/open
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\open
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\open\license
 ├─ optionator@0.9.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/gkz/optionator
@@ -1266,6 +2087,21 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\path-key
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\path-key\license
+├─ path-parse@1.0.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jbgutierrez/path-parse
+│  ├─ publisher: Javier Blanco
+│  ├─ email: http://jbgutierrez.info
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\path-parse
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\path-parse\LICENSE
+├─ path-scurry@2.0.2
+│  ├─ licenses: BlueOak-1.0.0
+│  ├─ repository: https://github.com/isaacs/path-scurry
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: https://blog.izs.me
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\path-scurry
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\path-scurry\LICENSE.md
 ├─ path-type@4.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/path-type
@@ -1274,6 +2110,18 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\path-type
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\path-type\license
+├─ pathe@2.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/pathe
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pathe
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pathe\LICENSE
+├─ pathval@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/pathval
+│  ├─ publisher: Veselin Todorov
+│  ├─ email: hi@vesln.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pathval
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pathval\LICENSE
 ├─ picocolors@1.1.1
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/alexeyraspopov/picocolors
@@ -1294,6 +2142,12 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\picomatch
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\picomatch\LICENSE
+├─ pixelmatch@7.1.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/mapbox/pixelmatch
+│  ├─ publisher: Volodymyr Agafonkin
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pixelmatch
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pixelmatch\LICENSE
 ├─ pkg-dir@4.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/pkg-dir
@@ -1302,6 +2156,25 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pkg-dir
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pkg-dir\license
+├─ playwright-core@1.58.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/microsoft/playwright
+│  ├─ publisher: Microsoft Corporation
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright-core
+│  ├─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright-core\LICENSE
+│  └─ noticeFile: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright-core\NOTICE
+├─ playwright@1.58.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/microsoft/playwright
+│  ├─ publisher: Microsoft Corporation
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright
+│  ├─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright\LICENSE
+│  └─ noticeFile: D:\University\Semester_5\КОП\bkackjack\node_modules\playwright\NOTICE
+├─ pngjs@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pngjs/pngjs
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pngjs
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pngjs\LICENSE
 ├─ postcss@8.5.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/postcss/postcss
@@ -1316,12 +2189,31 @@
 │  ├─ email: z@georgezahariev.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\prelude-ls
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\prelude-ls\LICENSE
+├─ pretty-format@27.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/facebook/jest
+│  ├─ publisher: James Kyle
+│  ├─ email: me@thejameskyle.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format\LICENSE
+├─ prop-types@15.8.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/facebook/prop-types
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\prop-types
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\prop-types\LICENSE
 ├─ property-expr@2.0.6
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jquense/expr
 │  ├─ publisher: @monasticpanic Jason Quense
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\property-expr
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\property-expr\LICENSE.txt
+├─ punycode.js@2.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mathiasbynens/punycode.js
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\punycode.js
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\punycode.js\LICENSE-MIT.txt
 ├─ punycode@2.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mathiasbynens/punycode.js
@@ -1344,6 +2236,25 @@
 │  ├─ email: alampros@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-confetti
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-confetti\LICENSE
+├─ react-cookie-consent@10.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Mastermindzh/react-cookie-consent
+│  ├─ publisher: Rick van Lieshout
+│  ├─ email: info@rickvanlieshout.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-cookie-consent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-cookie-consent\LICENSE
+├─ react-docgen-typescript@2.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/styleguidist/react-docgen-typescript
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-docgen-typescript
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-docgen-typescript\LICENSE.md
+├─ react-docgen@8.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/reactjs/react-docgen
+│  ├─ publisher: Felix Kling
+│  ├─ url: http://github.com/fkling
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-docgen
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-docgen\LICENSE
 ├─ react-dom@19.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/facebook/react
@@ -1368,6 +2279,11 @@
 │  ├─ repository: https://github.com/facebook/react
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-is
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-is\LICENSE
+├─ react-is@17.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/facebook/react
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format\node_modules\react-is
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\pretty-format\node_modules\react-is\LICENSE
 ├─ react-redux@9.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/reduxjs/react-redux
@@ -1381,14 +2297,14 @@
 │  ├─ repository: https://github.com/facebook/react
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-refresh
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-refresh\LICENSE
-├─ react-router-dom@7.9.5
+├─ react-router-dom@7.13.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/remix-run/react-router
 │  ├─ publisher: Remix Software
 │  ├─ email: hello@remix.run
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react-router-dom
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react-router-dom\LICENSE.md
-├─ react-router@7.9.5
+├─ react-router@7.13.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/remix-run/react-router
 │  ├─ publisher: Remix Software
@@ -1411,6 +2327,21 @@
 │  ├─ repository: https://github.com/facebook/react
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\react
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\react\LICENSE
+├─ recast@0.23.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/benjamn/recast
+│  ├─ publisher: Ben Newman
+│  ├─ email: bn@cs.stanford.edu
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\recast
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\recast\LICENSE
+├─ redent@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/redent
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\redent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\redent\license
 ├─ redux-thunk@3.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/reduxjs/redux-thunk
@@ -1423,6 +2354,13 @@
 │  ├─ repository: https://github.com/reduxjs/redux
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\redux
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\redux\LICENSE.md
+├─ requizzle@0.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/hegemonic/requizzle
+│  ├─ publisher: Jeff Williams
+│  ├─ email: jeffrey.l.williams@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\requizzle
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\requizzle\LICENSE
 ├─ reselect@5.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/reduxjs/reselect
@@ -1443,6 +2381,14 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\resolve-from
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\resolve-from\license
+├─ resolve@1.22.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/browserify/resolve
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\resolve
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\resolve\LICENSE
 ├─ reusify@1.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mcollina/reusify
@@ -1450,7 +2396,7 @@
 │  ├─ email: hello@matteocollina.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\reusify
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\reusify\LICENSE
-├─ rollup@4.52.5
+├─ rollup@4.59.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/rollup/rollup
 │  ├─ publisher: Rich Harris
@@ -1464,6 +2410,14 @@
 │  ├─ url: http://kentcdodds.com/
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\rtl-css-js
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\rtl-css-js\LICENSE
+├─ run-applescript@7.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/run-applescript
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\run-applescript
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\run-applescript\license
 ├─ run-parallel@1.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/feross/run-parallel
@@ -1491,6 +2445,12 @@
 │  ├─ publisher: GitHub Inc.
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\semver
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\semver\LICENSE
+├─ semver@7.7.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/node-semver
+│  ├─ publisher: GitHub Inc.
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report\node_modules\semver
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\istanbul-lib-report\node_modules\semver\LICENSE
 ├─ set-cookie-parser@2.7.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nfriedly/set-cookie-parser
@@ -1521,6 +2481,21 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\shebang-regex
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\shebang-regex\license
+├─ siginfo@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/emilbayes/siginfo
+│  ├─ publisher: Emil Bay
+│  ├─ email: github@tixz.dk
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\siginfo
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\siginfo\LICENSE
+├─ sirv@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/sirv
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke@lukeed.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\sirv
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\sirv\readme.md
 ├─ slash@3.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/slash
@@ -1555,6 +2530,13 @@
 │  ├─ repository: https://github.com/stacktracejs/stack-generator
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\stack-generator
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\stack-generator\LICENSE
+├─ stackback@0.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/shtylman/node-stackback
+│  ├─ publisher: Roman Shtylman
+│  ├─ email: shtylman@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\stackback
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\stackback\README.md
 ├─ stackframe@1.3.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/stacktracejs/stackframe
@@ -1570,6 +2552,48 @@
 │  ├─ repository: https://github.com/stacktracejs/stacktrace.js
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\stacktrace-js
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\stacktrace-js\LICENSE
+├─ std-env@3.10.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/std-env
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\std-env
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\std-env\LICENCE
+├─ storybook@10.2.13
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/storybookjs/storybook
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\storybook
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\storybook\README.md
+├─ strip-ansi@7.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/strip-ansi
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-ansi
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-ansi\license
+├─ strip-bom@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/strip-bom
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-bom
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-bom\license
+├─ strip-indent@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/strip-indent
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\redent\node_modules\strip-indent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\redent\node_modules\strip-indent\license
+├─ strip-indent@4.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/strip-indent
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-indent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\strip-indent\license
 ├─ strip-json-comments@3.1.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/strip-json-comments
@@ -1601,6 +2625,13 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\supports-color
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\supports-color\license
+├─ supports-preserve-symlinks-flag@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/node-supports-preserve-symlinks-flag
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\supports-preserve-symlinks-flag
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\supports-preserve-symlinks-flag\LICENSE
 ├─ throttle-debounce@3.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/niksy/throttle-debounce
@@ -1615,6 +2646,13 @@
 │  ├─ publisher: Jason Quense
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-case
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-case\README.md
+├─ tiny-invariant@1.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/alexreardon/tiny-invariant
+│  ├─ publisher: Alex Reardon
+│  ├─ email: alexreardon@gmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-invariant
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-invariant\LICENSE
 ├─ tiny-warning@1.0.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/alexreardon/tiny-warning
@@ -1622,12 +2660,39 @@
 │  ├─ email: alexreardon@gmail.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-warning
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tiny-warning\LICENSE
+├─ tinybench@2.9.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinybench
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tinybench
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tinybench\LICENSE
+├─ tinyexec@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyexec
+│  ├─ publisher: James Garbutt
+│  ├─ url: https://github.com/43081j
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyexec
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyexec\LICENSE
 ├─ tinyglobby@0.2.15
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/SuperchupuDev/tinyglobby
 │  ├─ publisher: Superchupu
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyglobby
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyglobby\LICENSE
+├─ tinyrainbow@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyrainbow
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\tinyrainbow
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\@vitest\expect\node_modules\tinyrainbow\LICENCE
+├─ tinyrainbow@3.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyrainbow
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyrainbow
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyrainbow\LICENCE
+├─ tinyspy@4.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tinylibs/tinyspy
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyspy
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tinyspy\LICENCE
 ├─ to-regex-range@5.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/to-regex-range
@@ -1650,6 +2715,14 @@
 │  ├─ email: mklehr@gmx.net
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\toposort
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\toposort\License
+├─ totalist@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lukeed/totalist
+│  ├─ publisher: Luke Edwards
+│  ├─ email: luke.edwards05@gmail.com
+│  ├─ url: https://lukeed.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\totalist
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\totalist\license
 ├─ trim-repeated@1.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/trim-repeated
@@ -1658,12 +2731,32 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\trim-repeated
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\trim-repeated\license
+├─ ts-api-utils@2.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/JoshuaKGoldberg/ts-api-utils
+│  ├─ publisher: JoshuaKGoldberg
+│  ├─ email: npm@joshuakgoldberg.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-api-utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-api-utils\LICENSE.md
+├─ ts-dedent@2.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tamino-martinius/node-ts-dedent
+│  ├─ publisher: Tamino Martinius
+│  ├─ email: dev@zaku.eu
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-dedent
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-dedent\LICENSE
 ├─ ts-easing@0.2.0
 │  ├─ licenses: Unlicense
 │  ├─ repository: https://github.com/streamich/ts-easing
 │  ├─ publisher: @streamich
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-easing
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ts-easing\LICENSE
+├─ tsconfig-paths@4.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dividab/tsconfig-paths
+│  ├─ publisher: Jonas Kello
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\tsconfig-paths
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\tsconfig-paths\LICENSE
 ├─ tslib@2.8.1
 │  ├─ licenses: 0BSD
 │  ├─ repository: https://github.com/Microsoft/tslib
@@ -1691,6 +2784,24 @@
 │  ├─ url: https://sindresorhus.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\type-fest
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\type-fest\readme.md
+├─ typescript@5.9.3
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/microsoft/TypeScript
+│  ├─ publisher: Microsoft Corp.
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\typescript
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\typescript\LICENSE.txt
+├─ uc.micro@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markdown-it/uc.micro
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\uc.micro
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\uc.micro\LICENSE.txt
+├─ underscore@1.13.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jashkenas/underscore
+│  ├─ publisher: Jeremy Ashkenas
+│  ├─ email: jeremy@documentcloud.org
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\underscore
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\underscore\LICENSE
 ├─ universalify@2.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/RyanZim/universalify
@@ -1698,6 +2809,11 @@
 │  ├─ email: opensrc@ryanzim.com
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\universalify
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\universalify\LICENSE
+├─ unplugin@2.3.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unjs/unplugin
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\unplugin
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\unplugin\LICENSE
 ├─ update-browserslist-db@1.1.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/browserslist/update-db
@@ -1723,12 +2839,25 @@
 │  ├─ publisher: Evan You
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\vite
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\vite\LICENSE.md
+├─ vitest@4.0.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/vitest-dev/vitest
+│  ├─ publisher: Anthony Fu
+│  ├─ email: anthonyfu117@hotmail.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\vitest\LICENSE.md
 ├─ void-elements@3.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/pugjs/void-elements
 │  ├─ publisher: hemanth.hm
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\void-elements
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\void-elements\LICENSE
+├─ webpack-virtual-modules@0.6.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sysgears/webpack-virtual-modules
+│  ├─ publisher: SysGears INC
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\webpack-virtual-modules
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\webpack-virtual-modules\LICENSE
 ├─ which@2.0.2
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/node-which
@@ -1737,6 +2866,13 @@
 │  ├─ url: http://blog.izs.me
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\which
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\which\LICENSE
+├─ why-is-node-running@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mafintosh/why-is-node-running
+│  ├─ publisher: Mathias Buus
+│  ├─ url: @mafintosh
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\why-is-node-running
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\why-is-node-running\LICENSE
 ├─ word-wrap@1.2.5
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jonschlinkert/word-wrap
@@ -1744,6 +2880,30 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\word-wrap
 │  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\word-wrap\LICENSE
+├─ ws@8.19.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/websockets/ws
+│  ├─ publisher: Einar Otto Stangvik
+│  ├─ email: einaros@gmail.com
+│  ├─ url: http://2x.io
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\ws
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\ws\LICENSE
+├─ wsl-utils@0.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/wsl-utils
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\wsl-utils
+│  └─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\wsl-utils\license
+├─ xmlcreate@2.0.4
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/michaelkourlas/node-xmlcreate
+│  ├─ publisher: Michael Kourlas
+│  ├─ email: michael@kourlas.com
+│  ├─ path: D:\University\Semester_5\КОП\bkackjack\node_modules\xmlcreate
+│  ├─ licenseFile: D:\University\Semester_5\КОП\bkackjack\node_modules\xmlcreate\LICENSE
+│  └─ noticeFile: D:\University\Semester_5\КОП\bkackjack\node_modules\xmlcreate\NOTICE
 ├─ yallist@3.1.1
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/yallist

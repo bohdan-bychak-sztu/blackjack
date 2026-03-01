@@ -3,7 +3,7 @@ import { CHIPS_VALUES } from "../../utils/GameUtil.js"; // Перевірте ш
 import styles from "./ChipsControl.module.css";
 import { useTranslation } from "react-i18next";
 
-export default function ChipsControl({ balance, currentBet, onBet, isBetPlaced }) {
+function ChipsControl({ balance, currentBet, onBet, isBetPlaced }) {
     const { t } = useTranslation();
 
     const handleRightClick = (e, value) => {
@@ -49,3 +49,5 @@ export default function ChipsControl({ balance, currentBet, onBet, isBetPlaced }
         </div>
     );
 }
+
+export default ChipsControl

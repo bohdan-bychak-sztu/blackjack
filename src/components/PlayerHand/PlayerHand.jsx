@@ -4,6 +4,15 @@ import styles from './PlayerHand.module.css';
 import { calculatePoints } from "../../utils/GameUtil.js";
 import useAnimatedHand from "../../hooks/useAnimatedHand.js";
 
+/**
+ * A component that displays a player's hand of cards.
+ * @param {object} props - The component props.
+ * @param {string} props.name - The name of the player.
+ * @param {Array<Card>} props.cards - The array of cards in the hand.
+ * @param {boolean} [props.reveal=true] - Whether to reveal the cards.
+ * @param {boolean} [props.isDealer=false] - Whether the hand belongs to the dealer.
+ * @returns {JSX.Element} The rendered player hand.
+ */
 function PlayerHand({ name, cards = [], reveal = true, isDealer = false }) {
     const { animatedCards, removingCards } = useAnimatedHand(cards);
 

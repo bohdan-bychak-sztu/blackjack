@@ -8,6 +8,11 @@ import PlayerStatsPage from "./pages/PlayerStatsPage/PlayerStatsPage.jsx";
 import useAutoLogin from "./hooks/useAutoLogin.js";
 import CookiePopup from "./components/CookiePopup/CookiePopup.jsx";
 
+/**
+ * The main component of the application.
+ * It sets up the router and renders the different pages.
+ * @returns {JSX.Element} The rendered application.
+ */
 function App() {
     useAutoLogin();
 

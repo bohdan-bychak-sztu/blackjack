@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import useStore from "../../store/useStore";
 import styles from "./CookiePopup.module.css";
 
-const CookiePopup = ({forceVisible = false, location = "bottom"}) => {
+function CookiePopup ({forceVisible = false, location = "bottom"}) {
     const { t } = useTranslation();
 
     const gdprConsent = useStore((state) => state.gdprConsent);
