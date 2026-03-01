@@ -48,6 +48,12 @@ const resources = {
             "nameTooShort": "Name must be at least 2 chars",
             "nameTooLong": "Name must be 15 chars or less",
             "required": "Required",
+
+            "cookies.title": "Cookie Settings",
+            "cookies.desc": "We use local storage to save your balance and stats.",
+            "cookies.link": "Learn more",
+            "cookies.accept": "Accept & Save Progress",
+            "cookies.decline": "Decline (Guest Mode)",
         }
     },
     uk: {
@@ -96,6 +102,11 @@ const resources = {
             "nameTooLong": "Ім'я повинно містити не більше 15 символів",
             "required": "Обов'язкове поле",
 
+            "cookies.title": "Налаштування файлів cookie",
+            "cookies.desc": "Ми використовуємо локальне сховище для збереження вашого балансу та статистики.",
+            "cookies.link": "Дізнатися більше",
+            "cookies.accept": "Прийняти та зберегти прогрес",
+            "cookies.decline": "Відхилити (гостьовий режим)",
         }
     },
     es: {
@@ -144,6 +155,11 @@ const resources = {
             "nameTooLong": "El nombre debe tener 15 caracteres o menos",
             "required": "Obligatorio",
 
+            "cookies.title": "Configuración de cookies",
+            "cookies.desc": "Utilizamos el almacenamiento local para guardar tu saldo y estadísticas.",
+            "cookies.link": "Leer más",
+            "cookies.accept": "Aceptar y guardar progreso",
+            "cookies.decline": "Rechazar (modo invitado)",
         }
     },
     zh: {
@@ -192,6 +208,11 @@ const resources = {
             "nameTooLong": "名称长度不得超过 15 个字符",
             "required": "必填",
 
+            "cookies.title": "Cookie 设置",
+            "cookies.desc": "我们使用本地存储来保存您的余额和统计数据。",
+            "cookies.link": "了解更多",
+            "cookies.accept": "接受并保存进度",
+            "cookies.decline": "拒绝（访客模式）",
         }
     }
 };

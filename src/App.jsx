@@ -6,10 +6,13 @@ import StartPage from "./pages/StartPage/StartPage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
 import PlayerStatsPage from "./pages/PlayerStatsPage/PlayerStatsPage.jsx";
 import useAutoLogin from "./hooks/useAutoLogin.js";
+import CookiePopup from "./components/CookiePopup/CookiePopup.jsx";
+
 function App() {
     useAutoLogin();
 
     return (
+        <>
             <HashRouter>
                 <Routes>
                     <Route element={<Layout/>}>
@@ -17,11 +20,13 @@ function App() {
                         <Route path="/start" element={<StartPage/>}/>
                         <Route path="/game" element={<GamePage/>}/>
                         <Route path="/result" element={<ResultPage/>}/>
-                        <Route path="/player/:id" element={<PlayerStatsPage />} />
+                        <Route path="/player/:id" element={<PlayerStatsPage/>}/>
                         <Route path="*" element={<h1>404 Not Found</h1>}/>
                     </Route>
                 </Routes>
             </HashRouter>
+            <CookiePopup />
+        </>
     )
 }
 

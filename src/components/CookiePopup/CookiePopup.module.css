@@ -1,0 +1,46 @@
+.container {
+    background: rgba(33, 33, 33, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #444;
+    align-items: center !important;
+    padding: 10px 20px !important;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.description {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.link {
+    color: #3498db;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.acceptBtn {
+    background: #2ecc71 !important;
+    color: white !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    padding: 8px 20px !important;
+}
+
+.declineBtn {
+    background: transparent !important;
+    border: 1px solid #e74c3c !important;
+    color: #e74c3c !important;
+    border-radius: 5px !important;
+    padding: 8px 20px !important;
+}
