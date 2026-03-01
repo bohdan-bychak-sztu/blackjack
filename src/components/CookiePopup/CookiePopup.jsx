@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import useStore from "../../store/useStore";
 import styles from "./CookiePopup.module.css";
 
-const CookiePopup = () => {
+const CookiePopup = ({forceVisible = false, location = "bottom"}) => {
     const { t } = useTranslation();
 
     const gdprConsent = useStore((state) => state.gdprConsent);
@@ -13,7 +13,8 @@ const CookiePopup = () => {
 
     return (
         <CookieConsent
-            location="bottom"
+            debug={forceVisible}
+            location={location}
             buttonText={t("cookies.accept")}
             declineButtonText={t("cookies.decline")}
             enableDeclineButton
